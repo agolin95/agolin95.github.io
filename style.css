@@ -22,6 +22,10 @@ ul {
 	margin-top: -15px;
 }
 
+.textbf {
+	font-weight: bold;
+}
+
 .textit {
 	font-style: italic;
 }
