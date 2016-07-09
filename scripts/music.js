@@ -68,8 +68,7 @@ function populatePreviews(response) {
 		}
 	}
 
-	$("#spotifyTrack").attr("src", UNIQUE_TRACKS[0].preview);
-
+	$("#spotifyTrack").attr("src", FINAL_TRACKS[0].preview);
 }
 
 function albumClick(clickedTrack) {
@@ -116,6 +115,10 @@ function setupMusicControls() {
 function updatePlays(clickedTrack) {
 	var playerSrc = $("#spotifyTrack").attr("src");
 	var playerTrack = document.getElementById(playerSrc);
+
+	console.log(playerSrc);
+	console.log(clickedTrack);
+	console.log(playerTrack);
 
 	if (playerTrack.id != clickedTrack.id) {
 		$("#spotifyTrack").attr("src", clickedTrack.id);
