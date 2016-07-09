@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Travels</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="getLatLng.css" type="text/css" />
+    <script type="text/javascript" src="getLatLng.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=checkAuth"></script>
+    <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAbBBW1EKzdtH5S9ugMpBcxmjElV3ciGuk&callback=initMap'></script>
+  </head>
+  <body>
+    <div id="authorize-div" style="display: none">
+      <span>Authorize access to Google Sheets API</span>
+      <!--Button for the user to click to initiate auth sequence -->
+      <button id="authorize-button" onclick="handleAuthClick(event)">
+        Authorize
+      </button>
+    </div>
+    <pre id="output"></pre>
+
+    <div id="map_canvas"></div>
+  </body>
+</html>
