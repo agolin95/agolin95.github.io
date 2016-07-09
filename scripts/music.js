@@ -20,7 +20,6 @@ function httpGetAsync(theUrl, callback) {
 
 function getMusic(response) {
 	var parsed = JSON.parse(response);
-	//console.log(parsed);
 
 	for (var i = 0; i < 50; i++){
 		var track = {artist: parsed.recenttracks.track[i].artist["#text"], 
@@ -39,7 +38,6 @@ function getMusic(response) {
 		}
 
 		if (unique) {
-			//console.log(track);
 			UNIQUE_TRACKS.push(RECENT_TRACKS[i]);
 		}
 	}
@@ -63,12 +61,11 @@ function populatePreviews(response) {
 			if (previewArtist == track.artist && previewAlbum == track.album && UNIQUE_TRACKS[i].image != "") {
 				UNIQUE_TRACKS[i].preview = parsed.tracks.items[0].preview_url;
 				FINAL_TRACKS.push(UNIQUE_TRACKS[i]);
+				$("#spotifyTrack").attr("src", FINAL_TRACKS[0].preview);
 				$("#recentTracks").append("<div onclick='albumClick(this)' id=" + UNIQUE_TRACKS[i].preview + " class='singleTrack' style='background:url(" + UNIQUE_TRACKS[i].image + "); background-size: 200px 200px;'><div class='albumPlay'></div></div>");
 			}
 		}
 	}
-
-	$("#spotifyTrack").attr("src", FINAL_TRACKS[0].preview);
 }
 
 function albumClick(clickedTrack) {
@@ -78,7 +75,6 @@ function albumClick(clickedTrack) {
 function setupMusicControls() {
 	$("#playButton").click(function() {
 		var source = $("#spotifyTrack").attr("src");
-		//console.log(source);
 		var trackToPlay = document.getElementById(source);
 		updatePlays(trackToPlay);
 	});
@@ -115,10 +111,6 @@ function setupMusicControls() {
 function updatePlays(clickedTrack) {
 	var playerSrc = $("#spotifyTrack").attr("src");
 	var playerTrack = document.getElementById(playerSrc);
-
-	console.log(playerSrc);
-	console.log(clickedTrack);
-	console.log(playerTrack);
 
 	if (playerTrack.id != clickedTrack.id) {
 		$("#spotifyTrack").attr("src", clickedTrack.id);
