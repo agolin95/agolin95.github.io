@@ -14,9 +14,9 @@ function setupSTAGE() {
     drawVenn();
     writeText();
     
-    //makeItem(200, 200, "black");
-    //makeItem(300, 220, "black");
-    //makeItem(230, 400, "black");
+    makeItem(200, 200, "black");
+    makeItem(300, 220, "black");
+    makeItem(230, 400, "black");
 
     STAGE.update();
 }
@@ -105,5 +105,5 @@ function handleClick(event){
 }
 
 function handleHover(event){
-    makeItem(200, 500, "blue");
+    makeItem(STAGE.mouseX, STAGE.mouseY, "blue");
 }
