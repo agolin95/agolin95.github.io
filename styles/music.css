@@ -1,0 +1,144 @@
+
+#spotifyTrack {
+	display: none;
+}
+
+#topBar {
+	height: 50px;
+	width: 100%;
+	background-color: #222222;
+	position: fixed;
+	bottom: 0px;
+	z-index: 10000;
+}
+
+#musicControls {
+	width: 80%;
+	margin-right: 10%;
+	margin-left: 10%;
+	text-align: center;
+}
+
+.musicButton {
+	width: 40px;
+	height: 40px;
+	background-size: 40px 40px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#previousButton {
+	background-image: url("../pics/rewind-white.png");
+}
+
+#previousButton:hover {
+	background-image: url("../pics/rewind-gray.png");
+}
+
+
+#playButton {
+	background-image: url("../pics/play-white.png");
+}
+
+#playButton:hover {
+	background-image: url("../pics/play-gray.png");
+}
+
+#pauseButton {
+	background-image: url("../pics/pause-white.png");
+}
+
+#pauseButton:hover {
+	background-image: url("../pics/pause-gray.png");
+}
+
+#nextButton {
+	background-image: url("../pics/forward-white.png");
+}
+
+#nextButton:hover {
+	background-image: url("../pics/forward-gray.png");
+}
+
+#musicsection {
+	background-color: #333333;
+	padding-bottom: 60px;
+	padding-top: 60px;
+	color: white;
+}
+
+#recentTracks {
+	width: 80%;
+	margin-right: 10%;
+	margin-left: 10%;
+	text-align: center;
+	max-height: 650px;
+	overflow: hidden;
+}
+
+.singleTrack {
+	margin: 10px;
+	width: 200px;
+	height: 200px;
+	background-size: 200px 200px;
+	text-align: center;
+	padding-top: 70px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+
+.albumPlay {
+	background-image: url('../pics/play-white-overlay.png');
+	background-size: 100px;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	opacity: 0;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: -20px;
+}
+
+.singleTrack:hover .albumPlay {
+    opacity: 1;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.singleTrack:active .albumPlay {
+    background: url('../pics/play-gray-overlay.png');
+    background-size: 100px;
+	background-repeat: no-repeat;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.albumPause {
+	background-image: url('../pics/pause-white-overlay.png');
+	background-size: 100px;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	opacity: 0;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: -20px;
+}
+
+.singleTrack:hover .albumPause {
+    opacity: 1;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.singleTrack:active .albumPause {
+    background: url('../pics/pause-gray-overlay.png');
+    background-size: 100px;
+	background-repeat: no-repeat;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}

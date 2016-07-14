@@ -109,8 +109,6 @@ function setupMusicControls() {
 }
 
 function updatePlays(clickedTrack) {
-	$("#musicControls").css("display", "block");
-	$(FINAL_TRACKS[0].preview).firstChild.css("display","none");
 	var playerSrc = $("#spotifyTrack").attr("src");
 	var playerTrack = document.getElementById(playerSrc);
 
