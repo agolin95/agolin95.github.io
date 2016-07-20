@@ -1,0 +1,55 @@
+body {
+	background-color: #555555;
+}
+
+.jumbotron {
+	background:url('../pics/wood.jpg');
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+	color: white;
+	text-align: center;
+}
+
+#profilepic {
+	width: 30%;
+	margin-left: 25px;
+	border: solid white 3px;
+	display: inline-block;
+}
+
+#greeting {
+	display: inline-block;
+	margin-left: 25px;
+}
+
+
+#aboutsection {
+	padding-left: 15%;
+	padding-right: 15%;
+	margin-top: -30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #F5FBEF;
+	background-color: #333333;
+}
+
+#aboutsection h4 {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.sectionheader {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+#wmfo {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
