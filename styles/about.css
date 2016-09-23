@@ -1,55 +1,99 @@
 body {
-	background-color: #555555;
-}
-
-.jumbotron {
-	background:url('../pics/wood.jpg');
-	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-	color: white;
-	text-align: center;
-}
-
-#profilepic {
-	width: 30%;
-	margin-left: 25px;
-	border: solid white 3px;
-	display: inline-block;
-}
-
-#greeting {
-	display: inline-block;
-	margin-left: 25px;
-}
-
-
-#aboutsection {
-	padding-left: 15%;
-	padding-right: 15%;
-	margin-top: -30px;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	color: #F5FBEF;
 	background-color: #333333;
+	font-family: raleway;
 }
-
-#aboutsection h4 {
-	margin-left: 5%;
-	margin-right: 5%;
-}
-
 .sectionheader {
 	text-align: center;
 	padding-bottom: 30px;
 }
 
-#wmfo {
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top: 20px;
-	margin-bottom: 20px;
+.toppicwrap {
+	width: 100%;
+	position: relative;
+}
+
+.hello {
+	position: relative;
+	margin-top: 10vw;
+	margin-left: 10vw;
+	font-size: 6vw;
+	z-index: -2;
+}
+
+.toppic {
+	width: 100%;
+	position: fixed;
+	z-index: -3;
+	top: 0;
+}
+
+
+#aboutsection {
+	width: 100%;
+	margin-top: 50%;
+	padding-bottom: 30px;
+	color: #F5FBEF;
+	background-color: #333333;
+	position: relative;
+	z-index: -1;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#aboutsection h4 {
+	margin-left: 5%;
+	margin-right: 5%;
+	line-height: 5vw;
+	background-color: (51, 51, 51, 0.8);
+	font-size: 2vw;
+}
+
+#aboutsection.sticky {
+	position: fixed;
+	top: 0;
+	margin-top: 0px;
+}
+
+#newyork {
+	width: 100%;
+}
+
+#libertywrap {
+	width: 60%;
+	display: inline-block;
+}
+
+#liberty {
+	width: 100%;
+}
+
+#newyorktextwrap {
+	width: 38%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 2vw;
+}
+
+#somervillesection {
+	background-color: #333333;
+	padding-right: 0px;
+	padding-left: 0px;
+	color: white;
+}
+
+#somervillesection h4{
+	line-height: 5vw;
+	width: 90%;
+	margin: auto;
+}
+
+#somerville {
+	width: 100%;
+	border-top: solid white 5px;
+	padding-top: 30px;
+}
+
+
+#somervillesection.sticky {
+	margin-top: 122%;
 }

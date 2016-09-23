@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
   <!--My StyleSheets-->
   <link rel="stylesheet" href="styles/about.css">
   <link rel="stylesheet" href="styles/work.css">
@@ -29,23 +30,42 @@
 
 
 
-
-<div class="jumbotron">
-	<img src="pics/me.jpg" class="img-circle" alt="Profile Picture" id="profilepic">
-    <h1 id="greeting">Hey, I'm Alexander</h1></div>
+<div class="toppicwrap">
+  <img class="toppic" src="pics/nycroof.jpg"/>
+  <h1 class="hello">My name is Alexander Golin.</h1>
+</div>
 
 <div class="container-fluid" id="aboutsection">
-	<h1 class="sectionheader">Who I Am</h1>
-	<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-	<img src="pics/wmfo.png" alt="WMFO Logo" id="wmfo">
-	<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4></div>
+  <div id="abouttextwrap">
+	  <h4 id="abouttext">&nbsp&nbsp&nbsp&nbsp&nbspI'm a senior at Tufts University in Somerville, MA, and I'm pursuing a dual degree in Human Factors Engineering and Computer Science. My greatest passion in life is music, and there is nothing I love more than finding new ways to combine psyschological and social principals with cutting edge technology to create unique solutions in the field of music.</h4>
+  </div>
+
+  <div id="newyork">
+    <div id="libertywrap">
+      <img src="pics/liberty.jpg" id="liberty">
+    </div>
+    <div id="newyorktextwrap">
+      <h4 id="newyorktext">&nbsp&nbsp&nbsp&nbsp&nbspI moved to New York City when I was three years old, and have lived all over the borough of Manhattan; from Chelsea and Hell's Kitchen to Washington Heights and East Harlem. I attended Hunter College Campus Schools from Kindergarten through Senior year of high school.</h4>
+    </div>    
+  </div>
+</div>
+
+<div class="container-fluid" id="somervillesection">
+  <div id="somervillewrap">
+    <img src="pics/somerville.jpg" id="somerville">
+  </div>
+  <div id="somervilletextwrap">
+    <h4 id="somervilletext">&nbsp&nbsp&nbsp&nbsp&nbspI moved to New York City when I was three years old, and have lived all over the borough of Manhattan; from Chelsea and Hell's Kitchen to Washington Heights and East Harlem. I attended Hunter College Campus Schools from Kindergarten through Senior year of high school.</h4>
+  </div>    
+</div>
+
 
 <div class="container-fluid" id="worksection">
   <h1 class="sectionheader">What I've Worked On</h1>
   <canvas id="workCanvas" height="850" width="1000">Your browser does not support the HTML5 canvas tag.</canvas>
   <div id="hoverOver">
     <h3 id="hoverOverTitle">Title</h3>
-    <img src="" id="hoverOverPic">
+    <!-- <img src="" id="hoverOverPic"> -->
     <p id="hoverOverContent">lorem ipsum dolor sigui fontini alserdo djibouti</p>
   </div>
 
@@ -58,7 +78,7 @@
         </div>
         <div class="modal-body">
         <img id="modalPic" src=""> 
-          <p id="modalContent">Some text in the modal.</p>
+          <p id="modalContent"></p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -81,6 +101,7 @@
 
 <script src="scripts/venn.js"></script>
 <script src="scripts/music.js"></script>
+<script src="scripts/scroll.js"></script>
 <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAbBBW1EKzdtH5S9ugMpBcxmjElV3ciGuk&callback=initMap'></script>
 </body>
 </html>

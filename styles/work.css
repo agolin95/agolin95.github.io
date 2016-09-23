@@ -24,7 +24,7 @@
 }
 
 #hoverOver {
-	width: 180px;
+	width: 250px;
 	background-color: white;
 	position: absolute;
 	display: none;
@@ -41,4 +41,20 @@
 	margin-right: 5%;
 	margin-left: 5%;
 	padding-bottom: 10px;
+}
+
+.modal-dialog {
+	width: 80%;
+}
+
+#modalPic {
+	margin-bottom: 15px!important;
+	display: none;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#modalTitle {
+	text-align: center;
 }
