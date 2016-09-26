@@ -98,7 +98,7 @@ function makeItem(name, x, y, size, COLOR, image, file, altfile, vid, descriptio
     // HOVER BEGIN
     circle.addEventListener("mouseover", function(){
         HOVER_COVER = new createjs.Shape();
-        HOVER_COVER.graphics.beginFill("#333333").drawCircle(x, y, size+2).endFill();
+        HOVER_COVER.graphics.beginFill("black").drawCircle(x, y, size+2).endFill();
         STAGE.addChild(HOVER_COVER);
         STAGE.update();
 
