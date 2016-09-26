@@ -10,6 +10,7 @@ body {
 .toppicwrap {
 	width: 100%;
 	position: relative;
+
 }
 
 .hello {
@@ -38,6 +39,7 @@ body {
 	z-index: -1;
 	padding-left: 0px;
 	padding-right: 0px;
+
 }
 
 #aboutsection h4 {
@@ -45,13 +47,6 @@ body {
 	margin-right: 5%;
 	line-height: 5vw;
 	background-color: (51, 51, 51, 0.8);
-	font-size: 2vw;
-}
-
-#aboutsection.sticky {
-	position: fixed;
-	top: 0;
-	margin-top: 0px;
 }
 
 #newyork {
@@ -62,16 +57,17 @@ body {
 	width: 60%;
 	display: inline-block;
 }
-
 #liberty {
 	width: 100%;
 }
 
 #newyorktextwrap {
-	width: 38%;
+	width: 42%;
 	display: inline-block;
 	vertical-align: top;
-	margin-top: 2vw;
+	margin-top: 7vw;
+	color: white;
+
 }
 
 #somervillesection {
@@ -81,19 +77,63 @@ body {
 	color: white;
 }
 
-#somervillesection h4{
-	line-height: 5vw;
-	width: 90%;
-	margin: auto;
-}
-
-#somerville {
+.tuftspic {
 	width: 100%;
-	border-top: solid white 5px;
-	padding-top: 30px;
+}
+
+.somervilletext {
+	line-height: 5vw;
+	font-size: 1.5vw;
+	width: 80%;
+	position: relative;
+	z-index: 100;
+	margin-right: 10%;
+	margin-left: 10%;
+	display: block;
+	color: #333333;
+	background-color: rgba(255, 255, 255, .75);
+	padding-right: 20px;
+	padding-left: 20px;
+	font-weight: 700;
+	border-radius: 5px;
+	border: solid #333333 4px;
+}
+
+#somervilletoptext {
+	margin-top: -68vw;
 }
 
 
-#somervillesection.sticky {
-	margin-top: 122%;
+#wmfosection {
+	background-color: #333333;
+	padding-right: 0px;
+	padding-left: 0px;
+	color: white;
 }
+
+
+.wmfopic {
+	width: 100%;
+}
+
+.wmfotext {
+	line-height: 5vw;
+	font-size: 1.5vw;
+	width: 80%;
+	position: relative;
+	z-index: 100;
+	margin-right: 10%;
+	margin-left: 10%;
+	display: block;
+	color: #333333;
+	background-color: rgba(255, 255, 255, .75);
+	padding-right: 20px;
+	padding-left: 20px;
+	font-weight: 700;
+	border-radius: 5px;
+	border: solid #333333 4px;
+	margin-top: -50vw;
+}
+
+
+

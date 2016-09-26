@@ -103,7 +103,7 @@ function makeItem(name, x, y, size, COLOR, image, file, altfile, vid, descriptio
 
         var boxHeight = $("#hoverOver").height()+10;
 
-        $("#hoverOver").css({'top':mouseY-boxHeight,'left':mouseX+5, 'display':'block'});
+        $("#hoverOver").css({'top':mouseY-boxHeight,'left':mouseX-255, 'display':'block'});
     }, false);
 
     // HOVER END

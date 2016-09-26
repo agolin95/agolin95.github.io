@@ -5,21 +5,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
-  <!--My StyleSheets-->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800" rel="stylesheet">  <!--My StyleSheets-->
   <link rel="stylesheet" href="styles/about.css">
   <link rel="stylesheet" href="styles/work.css">
   <link rel="stylesheet" href="styles/music.css">
   <link rel="stylesheet" href="styles/map.css">
+  <link rel="stylesheet" href="styles/scroll.css">
+  <link rel="stylesheet" href="styles/musicupdate.css">
 
-  <script src="scripts/map.js"></script>
+
+  <!--<script src="scripts/map.js"></script>-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
-  <script src="https://spreadsheets.google.com/feeds/cells/17caI8ICBPxc7J7gQ3tdKalEps3iltywNruesM27m97U/od6/public/values?alt=json-in-script&callback=myCallback"></script>
+  <!--<script src="https://spreadsheets.google.com/feeds/cells/17caI8ICBPxc7J7gQ3tdKalEps3iltywNruesM27m97U/od6/public/values?alt=json-in-script&callback=myCallback"></script>-->
 </head>
 <body onload="init()">
 <audio controls id="spotifyTrack" src=""></audio>
+
 <div id="topBar">
   <div id="musicControls">
     <div id="previousButton" class="musicButton"></div>
@@ -29,6 +32,7 @@
 </div>
 
 
+<div id="contentcontainer">
 
 <div class="toppicwrap">
   <img class="toppic" src="pics/nycroof.jpg"/>
@@ -41,9 +45,9 @@
   </div>
 
   <div id="newyork">
-    <div id="libertywrap">
+    <!--<div id="libertywrap">
       <img src="pics/liberty.jpg" id="liberty">
-    </div>
+    </div>-->
     <div id="newyorktextwrap">
       <h4 id="newyorktext">&nbsp&nbsp&nbsp&nbsp&nbspI moved to New York City when I was three years old, and have lived all over the borough of Manhattan; from Chelsea and Hell's Kitchen to Washington Heights and East Harlem. I attended Hunter College Campus Schools from Kindergarten through Senior year of high school.</h4>
     </div>    
@@ -51,14 +55,12 @@
 </div>
 
 <div class="container-fluid" id="somervillesection">
-  <div id="somervillewrap">
-    <img src="pics/somer.jpg" id="somerville">
-  </div>
-  <div id="somervilletextwrap">
-    <h4 id="somervilletext">&nbsp&nbsp&nbsp&nbsp&nbspI moved to New York City when I was three years old, and have lived all over the borough of Manhattan; from Chelsea and Hell's Kitchen to Washington Heights and East Harlem. I attended Hunter College Campus Schools from Kindergarten through Senior year of high school.</h4>
-  </div>    
+    <img class="tuftspic" src="pics/tufts.jpg"/>
+    <h4 class="somervilletext" id="somervilletoptext">&nbsp&nbsp&nbsp&nbsp&nbspWhen I got to Tufts, I initally declared my major as Mechanical Engineering, but I later realized my passion lies far more in finding the hybrid paths forged by the interactions between psychology and engineering. I redeclared as a Human Factors Engineering and Computer Science double major, taking a particular interest in user centric web design. My courseload has included classes ranging anywhere between engineering sciences, applied computer programming, theoretical computer science, psychology and psychological methods, and design. My younger brother Nicholas, my favorite person in the world, joined me at Tufts as a member of the graduating class of 2019.
+    </h4>
+  <h4 class="somervilletext">
+    &nbsp&nbsp&nbsp&nbsp&nbspI am a member of Tau Beta Pi, the Engineering Honors Society, and I am the Webmaster of the Tufts chapther of the Human Factors and Ergonomics Society, which has a new website in the works. In addition to my academic involvement, I am also Music Director of 91.5 WMFO Medford, Tufts Freeform Radio, and I am a leader in the Tufts DIY Concert Booking Collective called Midnight/Applejam.</h4>
 </div>
-
 
 <div class="container-fluid" id="worksection">
   <h1 class="sectionheader">What I've Worked On</h1>
@@ -67,7 +69,7 @@
     <h3 id="hoverOverTitle">Title</h3>
     <!-- <img src="" id="hoverOverPic"> -->
     <p id="hoverOverContent">lorem ipsum dolor sigui fontini alserdo djibouti</p>
-  </div>
+  </div>  
 
   <div id="myModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
@@ -88,20 +90,27 @@
   </div>
 </div>
 
+<div class="container-fluid" id="wmfosection">
+    <img class="wmfopic" src="pics/onair.jpg"/>
+    <h4 class="wmfotext">&nbsp&nbsp&nbsp&nbsp&nbspWhen I am not working on projects or problem sets for classes, I spend the majority of my time working as Music Director of 91.5 WMFO Medford, Tufts Freeform Radio. I have held the position since the end of my freshman year, and will continue through my graduation, at which point my younger brother will take over my post. My day to day responsibilities include updating the station's music database and communicating with music industry representatives, however I also spend a lot of time working on long term projects. In my time as Music Director, I have dramatically streamlined and modernized the influx of new music, I have redesigned the WMFO website, and I have led a community and ethos building effort throughout my four years as a member of the station.</h4>
+  </div>
+
+</div>
+
 <div class="container-fluid" id="musicsection">
   <h1 class="sectionheader">What I'm Listening To</h1>
   <div id="recentTracks"></div>
 </div>
-
+<!--
 <div class="container-fluid" id="mapsection">
   <h1 class="sectionheader">Where I've Been</h1>
   <div id="map_canvas"></div>
 </div>
-
+-->
 
 <script src="scripts/venn.js"></script>
 <script src="scripts/music.js"></script>
 <script src="scripts/scroll.js"></script>
-<script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAbBBW1EKzdtH5S9ugMpBcxmjElV3ciGuk&callback=initMap'></script>
+<!--<script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAbBBW1EKzdtH5S9ugMpBcxmjElV3ciGuk&callback=initMap'></script>-->
 </body>
 </html>

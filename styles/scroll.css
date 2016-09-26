@@ -1,0 +1,94 @@
+body {
+	width: 100%;
+}
+
+.toppicwrap {
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	width: 100vw;
+	height: 80vw;
+}
+
+.toppic {
+	z-index: -7;
+	width: 100vw;
+}
+
+.hello {
+	z-index: -6;
+}
+
+
+#aboutsection {
+	position: relative;
+	z-index: -5;
+	height: 66vw;
+	width: 100vw;
+	background: none;
+	color: #333333!important;
+	/*border-bottom: solid white 4px;*/
+}
+
+#aboutsection h4 {
+	font-size: 1.8vw!important;
+	font-weight: 600;
+}
+
+#newyorktextwrap h4 {
+	font-size: 1.8vw!important;
+	font-weight: 600;
+	text-shadow: 2px 2px 5px #111111;
+}
+
+#somervillesection {
+	position: relative;
+	z-index: -4;
+	border-top: solid white 4px;
+	height: 66vw;
+	/*border-bottom: solid white 4px;*/
+}
+
+#worksection {
+	height: 100vh;
+	border-top: solid white 4px;
+	border-bottom: solid white 4px;
+	background-color: #333;
+	background-image: none;
+}
+
+#wmfosection {
+	position: relative;
+	z-index: -2;
+	border-top: solid white 4px;
+	height: 100vh;
+	/*border-bottom: solid white 4px;*/
+}
+
+#musicsection {
+	border-top: solid white 4px;
+}
+
+/* SCROLLING */
+#aboutsection.sticky {
+	position: fixed;
+	top: 0;
+	margin-top: 0px;
+}
+#aboutsection.donesticky {
+}
+
+#somervillesection.poststicky {
+	margin-top: 160vw;
+}
+#somervillesection.sticky {
+	position: fixed;
+	top: 0;
+	margin-top: 0px;
+}
+#somervillesection.donesticky {
+}
+
+#worksection.poststicky {
+	margin-top: 240vw;
+}

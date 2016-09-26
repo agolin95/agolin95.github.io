@@ -2,7 +2,7 @@ var RECENT_TRACKS = [];
 var UNIQUE_TRACKS = [];
 var FINAL_TRACKS = [];
 var lastFmKey = "6027141d1c72a7b3b857d7d39e8a1a37";
-var lastFmUrl = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=agolin95&api_key=" + lastFmKey + "&format=json";
+var lastFmUrl = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&limit=200&user=agolin95&api_key=" + lastFmKey + "&format=json";
 
 httpGetAsync(lastFmUrl, getMusic);
 setupMusicControls();
@@ -21,7 +21,7 @@ function httpGetAsync(theUrl, callback) {
 function getMusic(response) {
 	var parsed = JSON.parse(response);
 
-	for (var i = 0; i < 50; i++){
+	for (var i = 0; i < 200; i++){
 		var track = {artist: parsed.recenttracks.track[i].artist["#text"], 
 					 album: parsed.recenttracks.track[i].album["#text"],
 					 image: parsed.recenttracks.track[i].image[3]["#text"],
