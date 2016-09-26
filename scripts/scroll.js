@@ -100,7 +100,8 @@ $window.scroll(function() {
 
 	if ($window.width() < (3/2)*$window.height()) {
 
-	 	if ($window.scrollTop() + (2/3)*$window.width() > $window.width() * 3 + $window.height()) {
+	 	if ($window.scrollTop() + (2/3)*$window.width() > $window.width() * 4) {
+	 		console.log("here");
 			$("#musicsection").fadeIn("fast", function() {});
 		}
 		else if ($window.scrollTop() + (2/3)*$window.width() > $window.width() * 3.2) {
