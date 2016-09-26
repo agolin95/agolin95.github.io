@@ -55,7 +55,7 @@ $window.resize(function() {
 		$(".somervilletext").css("font-size", "1.3vw")
 		$(".wmfotext").css("font-size", "1.5vw");
 
-		$(".abouttext").css("line-height", "5vw")
+		$(".abouttext").css("line-height", "4.5vw")
 		$(".somervilletext").css("line-height", "5vw")
 		$(".wmfotext").css("line-height", "5vw")
 	}
