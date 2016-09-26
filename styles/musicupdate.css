@@ -6,12 +6,12 @@
 	width: 100%;
 	height: calc(100vh - (100vw*2)/3);
 	padding: 0px!important;
-	min-height: 166px;
+	min-height: 195px;
 }
 
 #recentTracks {
 	width: 100%;
-	height: calc((100vh - 55px) - (100vw*2)/3);
+	height: calc((100vh - 85px) - (100vw*2)/3);
 	overflow: scroll;
 	min-height: 110px;
 }
