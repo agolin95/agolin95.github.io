@@ -82,7 +82,8 @@ function populatePreviews(response) {
 				$("#spotifyTrack").attr("src", FINAL_TRACKS[0].preview);
 				$("#displayalbum").text(FINAL_TRACKS[0].album);
 				$("#displayartist").text(FINAL_TRACKS[0].artist);
-				$("#recentTracks").append("<div onclick='albumClick(this)' title='" + UNIQUE_TRACKS[i].album + "," + UNIQUE_TRACKS[i].artist +"' id=" + UNIQUE_TRACKS[i].preview + " class='singleTrack' style='background:url(" + UNIQUE_TRACKS[i].image + "); background-size: 200px 200px;'><div class='albumPlay'></div></div>");
+				var title = '"' + UNIQUE_TRACKS[i].album + ":::" + UNIQUE_TRACKS[i].artist + '"';
+				$("#recentTracks").append("<div onclick='albumClick(this)' title=" + title + " id=" + UNIQUE_TRACKS[i].preview + " class='singleTrack' style='background:url(" + UNIQUE_TRACKS[i].image + "); background-size: 200px 200px;'><div class='albumPlay'></div></div>");
 			}
 		}
 	}
@@ -129,7 +130,7 @@ function setupMusicControls() {
 }
 
 function updatePlays(clickedTrack) {
-	var albumandartist = clickedTrack.title.split(",");
+	var albumandartist = clickedTrack.title.split(":::");
 	$("#displayalbum").text(albumandartist[0]);
 	$("#displayartist").text(albumandartist[1]);
 	var playerSrc = $("#spotifyTrack").attr("src");
