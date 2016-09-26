@@ -14,15 +14,17 @@ $(document).ready (function() {
 	if ($window.width() > (3/2)*$window.height()) {
 		$("#musicsection").addClass("verticalmusic");
 		$("#recentTracks").addClass("verticalmusic");
-		$(".hello").css("font-size", "9vh")
-		$(".abouttext").css("font-size", "2vh")
-		$(".somervilletext").css("font-size", "1.8vh")
-		$(".wmfotext").css("font-size", "2vh")
+		$(".hello").css("font-size", "9vh");
+		$(".abouttext").css("font-size", "2vh");
+		$(".somervilletext").css("font-size", "1.8vh");
+		$(".wmfotext").css("font-size", "2vh");
 
 
-		$(".abouttext").css("line-height", "7vh")
-		$(".somervilletext").css("line-height", "7vh")
-		$(".wmfotext").css("line-height", "7vh")
+		$(".abouttext").css("line-height", "7vh");
+		$(".somervilletext").css("line-height", "7vh");
+		$(".wmfotext").css("line-height", "7vh");
+
+		$(".worksection").css("height", "100vh");
 	}
 
 });
@@ -41,24 +43,28 @@ $window.resize(function() {
 		$("#recentTracks").addClass("verticalmusic");
 		$(".hello").css("font-size", "9vh");
 		$(".abouttext").css("font-size", "2vh");
-		$(".somervilletext").css("font-size", "1.8vh")
-		$(".wmfotext").css("font-size", "2vh")
+		$(".somervilletext").css("font-size", "1.8vh");
+		$(".wmfotext").css("font-size", "2vh");
 
-		$(".abouttext").css("line-height", "7vh")
-		$(".somervilletext").css("line-height", "7vh")
-		$(".wmfotext").css("line-height", "7vh")
+		$(".abouttext").css("line-height", "7vh");
+		$(".somervilletext").css("line-height", "7vh");
+		$(".wmfotext").css("line-height", "7vh");
+
+		$(".worksection").css("height", "100vh");
 
 	}else {
 		$("#musicsection").removeClass("verticalmusic");
 		$("#recentTracks").removeClass("verticalmusic");
 		$(".hello").css("font-size", "6vw");
 		$(".abouttext").css("font-size", "1.5vw");
-		$(".somervilletext").css("font-size", "1.3vw")
+		$(".somervilletext").css("font-size", "1.3vw");
 		$(".wmfotext").css("font-size", "1.5vw");
 
-		$(".abouttext").css("line-height", "4.5vw")
-		$(".somervilletext").css("line-height", "5vw")
-		$(".wmfotext").css("line-height", "5vw")
+		$(".abouttext").css("line-height", "4.5vw");
+		$(".somervilletext").css("line-height", "5vw");
+		$(".wmfotext").css("line-height", "5vw");
+
+		$(".worksection").css("height", "80vw");
 	}
 });
 

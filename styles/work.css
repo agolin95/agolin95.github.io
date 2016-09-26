@@ -7,11 +7,19 @@
     background-size: cover;
 	color: black;
 	padding-top: 5%;
-	max-height: 80vh;
+}
+
+#worksection {
+	height: 80vw;
+	border-top: solid white 4px;
+	border-bottom: solid white 4px;
+	background-color: #333;
+	background-image: none;
+	max-width: calc((100vh/2) * 3);
+	margin-left: 0px;
 }
 
 #workCanvas {
-	max-height: 65vh;
 	max-width: 80vw;
 }
 
