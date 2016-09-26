@@ -56,7 +56,7 @@ body {
 	position: relative;
 	z-index: -2;
 	border-top: solid white 4px;
-	height: 100vh;
+	height: 66vw;
 	max-width: calc((100vh/2) * 3);
 	margin-left: 0px;
 	/*border-bottom: solid white 4px;*/
