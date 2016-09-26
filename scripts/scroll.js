@@ -29,6 +29,7 @@ $(document).ready (function() {
 
 
 $window.resize(function() {
+	$("#musicsection").fadeIn("fast", function() {});
 	aboutsectionTop = $('#aboutsection').offset().top;
    	somervillesectionTop = $('#somervillesection').offset().top;
    	worksectionTop = $('#somervillesection').offset().top;

@@ -6,7 +6,7 @@
 	width: 100%;
 	height: calc(100vh - (100vw*2)/3);
 	padding: 0px!important;
-	min-height: 205px;
+	min-height: 166px;
 }
 
 #recentTracks {
@@ -108,7 +108,7 @@
 
 #recentTracks.verticalmusic {
 	width: 100%;
-	height: calc(100vh - 130px);
+	height: calc(100vh - 50px);
 	overflow: scroll;
 	min-width: 140px;
 	max-height: none;

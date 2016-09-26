@@ -85,7 +85,7 @@ function makeItem(name, x, y, size, COLOR, image, file, altfile, vid, descriptio
 
         }
         if (file != "") {
-            $("#modalContent").append('<embed src="work' + file + '" width="90%" height="700px" />');
+            $("#modalContent").append('<embed src="work' + file + '" width="90%" height="1100px" />');
         }
         if (altfile.substring(1, 7) == "iframe") {
             $("#modalContent").prepend(altfile);
