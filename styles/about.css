@@ -32,34 +32,28 @@ body {
 #aboutsection {
 	width: 100%;
 	margin-top: 50%;
-	padding-bottom: 30px;
 	color: #F5FBEF;
 	background-color: #333333;
 	position: relative;
 	z-index: -1;
 	padding-left: 0px;
 	padding-right: 0px;
+	padding-top: 2%;
 
 }
 
-#aboutsection h4 {
-	margin-left: 5%;
-	margin-right: 5%;
+.abouttext {
+	margin-left: 10%;
+	margin-right: 10%;
 	line-height: 5vw;
 	background-color: (51, 51, 51, 0.8);
+	font-size: 1.5vw;
 }
 
 #newyork {
 	width: 100%;
 }
 
-#libertywrap {
-	width: 60%;
-	display: inline-block;
-}
-#liberty {
-	width: 100%;
-}
 
 #newyorktextwrap {
 	width: 42%;
@@ -67,7 +61,11 @@ body {
 	vertical-align: top;
 	margin-top: 7vw;
 	color: white;
+	margin-left: 6%;
 
+}
+
+#newyorktext {
 }
 
 #somervillesection {
@@ -83,7 +81,7 @@ body {
 
 .somervilletext {
 	line-height: 5vw;
-	font-size: 1.5vw;
+	font-size: 1.3vw;
 	width: 80%;
 	position: relative;
 	z-index: 100;
@@ -100,7 +98,7 @@ body {
 }
 
 #somervilletoptext {
-	margin-top: -68vw;
+	margin-top: -66%;
 }
 
 
@@ -132,7 +130,7 @@ body {
 	font-weight: 700;
 	border-radius: 5px;
 	border: solid #333333 4px;
-	margin-top: -50vw;
+	margin-top: -55%;
 }
 
 

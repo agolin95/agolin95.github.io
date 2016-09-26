@@ -5,10 +5,60 @@ var somervillesectionTop;
 var worksectionTop;
 var wmfosectionTop;
 
+$(document).ready (function() {
+	var $window = $(window);
+	var aboutsectionTop = $('#aboutsection').offset().top;
+	var somervillesectionTop;
+	var worksectionTop;
+	var wmfosectionTop;
+	if ($window.width() > (3/2)*$window.height()) {
+		$("#musicsection").addClass("verticalmusic");
+		$("#recentTracks").addClass("verticalmusic");
+		$(".hello").css("font-size", "9vh")
+		$(".abouttext").css("font-size", "2vh")
+		$(".somervilletext").css("font-size", "1.8vh")
+		$(".wmfotext").css("font-size", "2vh")
+
+
+		$(".abouttext").css("line-height", "7vh")
+		$(".somervilletext").css("line-height", "7vh")
+		$(".wmfotext").css("line-height", "7vh")
+	}
+
+});
+
+
 $window.resize(function() {
 	aboutsectionTop = $('#aboutsection').offset().top;
    	somervillesectionTop = $('#somervillesection').offset().top;
    	worksectionTop = $('#somervillesection').offset().top;
+
+   	$window.scrollTop(0);
+
+   	if ($window.width() > (3/2)*$window.height()) {
+		$("#musicsection").addClass("verticalmusic");
+		$("#recentTracks").addClass("verticalmusic");
+		$(".hello").css("font-size", "9vh");
+		$(".abouttext").css("font-size", "2vh");
+		$(".somervilletext").css("font-size", "1.8vh")
+		$(".wmfotext").css("font-size", "2vh")
+
+		$(".abouttext").css("line-height", "7vh")
+		$(".somervilletext").css("line-height", "7vh")
+		$(".wmfotext").css("line-height", "7vh")
+
+	}else {
+		$("#musicsection").removeClass("verticalmusic");
+		$("#recentTracks").removeClass("verticalmusic");
+		$(".hello").css("font-size", "6vw");
+		$(".abouttext").css("font-size", "1.5vw");
+		$(".somervilletext").css("font-size", "1.3vw")
+		$(".wmfotext").css("font-size", "1.5vw");
+
+		$(".abouttext").css("line-height", "5vw")
+		$(".somervilletext").css("line-height", "5vw")
+		$(".wmfotext").css("line-height", "5vw")
+	}
 });
 
 $window.scroll(function() {
@@ -41,17 +91,18 @@ $window.scroll(function() {
 		$("#somervillesection").removeClass('poststicky');
 	}
 
+	if ($window.width() < (3/2)*$window.height()) {
 
- 	if ($window.scrollTop() + (2/3)*$window.width() > $window.width() * 3 + $window.height()) {
-		$("#musicsection").fadeIn("fast", function() {});
+	 	if ($window.scrollTop() + (2/3)*$window.width() > $window.width() * 3 + $window.height()) {
+			$("#musicsection").fadeIn("fast", function() {});
+		}
+		else if ($window.scrollTop() + (2/3)*$window.width() > $window.width() * 3.2) {
+			$("#musicsection").fadeOut("fast", function() {});
+		}
+		else if ($window.scrollTop() + (2/3)*$window.width() + $window.height() > $window.width() * 3.2) {
+			$("#musicsection").fadeIn("fast", function() {});
+		}
 	}
-	else if ($window.scrollTop() + (2/3)*$window.width() > $window.width() * 3.2) {
-		$("#musicsection").fadeOut("fast", function() {});
-	}
-	else if ($window.scrollTop() + (2/3)*$window.width() + $window.height() > $window.width() * 3.2) {
-		$("#musicsection").fadeIn("fast", function() {});
-	}
-
 
 
 	//console.log($('#worksection').offset().top + " ---- " + (3.41017* $window.height()- ($window.height()- (2/3)*$window.width())));

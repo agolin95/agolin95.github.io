@@ -3,16 +3,16 @@ body {
 }
 
 .toppicwrap {
-	margin-left: auto;
-	margin-right: auto;
 	overflow: hidden;
 	width: 100vw;
 	height: 80vw;
+	max-width: calc((100vh/2) * 3);
 }
 
 .toppic {
 	z-index: -7;
 	width: 100vw;
+	max-width: calc((100vh/2) * 3);
 }
 
 .hello {
@@ -27,16 +27,16 @@ body {
 	width: 100vw;
 	background: none;
 	color: #333333!important;
+	max-width: calc((100vh/2) * 3);
+	margin-left: 0px;
 	/*border-bottom: solid white 4px;*/
 }
 
 #aboutsection h4 {
-	font-size: 1.8vw!important;
 	font-weight: 600;
 }
 
 #newyorktextwrap h4 {
-	font-size: 1.8vw!important;
 	font-weight: 600;
 	text-shadow: 2px 2px 5px #111111;
 }
@@ -46,6 +46,8 @@ body {
 	z-index: -4;
 	border-top: solid white 4px;
 	height: 66vw;
+	max-width: calc((100vh/2) * 3);
+	margin-left: 0px;
 	/*border-bottom: solid white 4px;*/
 }
 
@@ -55,6 +57,8 @@ body {
 	border-bottom: solid white 4px;
 	background-color: #333;
 	background-image: none;
+	max-width: calc((100vh/2) * 3);
+	margin-left: 0px;
 }
 
 #wmfosection {
@@ -62,6 +66,8 @@ body {
 	z-index: -2;
 	border-top: solid white 4px;
 	height: 100vh;
+	max-width: calc((100vh/2) * 3);
+	margin-left: 0px;
 	/*border-bottom: solid white 4px;*/
 }
 

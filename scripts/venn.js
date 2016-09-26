@@ -15,6 +15,11 @@ function init() {
     setupSTAGE();
 }
 
+
+$(window).resize(function() {
+    setupSTAGE();
+});
+
 function setupSTAGE() {
     STAGE = new createjs.Stage("workCanvas");
     STAGE.enableMouseOver(20);

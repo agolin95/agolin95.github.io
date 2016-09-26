@@ -88,3 +88,33 @@
     transition: all 0.1s;
     -webkit-transition: all 0.1s;
 }
+
+
+#musicsection.verticalmusic {
+	position: fixed!important;
+	height: 100vh;
+	bottom: 0vh!important;
+	background-color: #333333;
+	background-size: 100%;
+	width: calc(100vw - (100vh*(3/2)));
+	padding: 0px!important;
+	min-height: 205px;
+	border-top: none;
+	border-left: solid white 4px;
+	right: 0px;
+	min-width: 150px;
+
+}
+
+#recentTracks.verticalmusic {
+	width: 100%;
+	height: calc(100vh - 130px);
+	overflow: scroll;
+	min-width: 140px;
+	max-height: none;
+}
+
+
+
+
+
