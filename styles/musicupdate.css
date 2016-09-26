@@ -11,7 +11,7 @@
 
 #recentTracks {
 	width: 100%;
-	height: calc((100vh - 95px) - (100vw*2)/3);
+	height: calc((100vh - 55px) - (100vw*2)/3);
 	overflow: scroll;
 	min-height: 110px;
 }

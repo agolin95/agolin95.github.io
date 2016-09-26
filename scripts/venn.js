@@ -37,8 +37,8 @@ function setupSTAGE() {
     makeItem("Bandcamp Product Assessment - 2016", 360, 520, 25, COLOR, "", "/hf-music/bandcamp.pdf", "", "", "UX product assessment of the Bandcamp desktop website. This was an intermediate project for the Tufts class Human Computer Interaction.");
 
     //HF
-    makeItem("Apportech Universal Gardening Tool - 2016", 315, 250, 25, COLOR, "", "/hf/vftreport.pdf", "/hf/vftppt.pdf", "", "Complete UX research study and subsequent product design of a universal gardening device. Final semester-long project for the Tufts class Human Factors in Product Design.");
-    makeItem("Neuromarketing Presentation - 2016", 200, 380, 25, COLOR, "", "/hf/neuromarket.pdf", "", "", "Group presentation on neuromarketing in the modern world, used for leading a two and a half hour seminar class. Final seminar presentation for the Tufts class Advanced Engineering Psychology.");
+    makeItem("Apportech Universal Gardening Tool - 2016", 350, 200, 25, COLOR, "", "/hf/vftreport.pdf", "/hf/vftppt.pdf", "", "Complete UX research study and subsequent product design of a universal gardening device. Final semester-long project for the Tufts class Human Factors in Product Design.");
+    makeItem("Neuromarketing Presentation - 2016", 250, 360, 25, COLOR, "", "/hf/neuromarket.pdf", "", "", "Group presentation on neuromarketing in the modern world, used for leading a two and a half hour seminar class. Final seminar presentation for the Tufts class Advanced Engineering Psychology.");
 
     //CS-Music
     makeItem("Music Theory Trainer - 2014", 600, 500, 25, COLOR, "/cs-music/trainer.png", "/cs-music/lettertransmission.pdf", "", "", "VBA project which implements the UI and functionality of a music theory training program. This was the final project for the Tufts class Intro to Computing in Engineering.");
@@ -108,7 +108,13 @@ function makeItem(name, x, y, size, COLOR, image, file, altfile, vid, descriptio
 
         var boxHeight = $("#hoverOver").height()+10;
 
-        $("#hoverOver").css({'top':mouseY-boxHeight,'left':mouseX-255, 'display':'block'});
+
+        if (mouseX < $(window).width()/2){
+            $("#hoverOver").css({'top':mouseY-boxHeight + 100,'left':mouseX+10, 'display':'block'});
+        }
+        else {
+            $("#hoverOver").css({'top':mouseY-boxHeight + 100,'left':mouseX-260, 'display':'block'});
+        }
     }, false);
 
     // HOVER END
@@ -178,22 +184,22 @@ function drawVenn() {
 }
 
 function writeText() {
-    var humanfactors = new createjs.Text("Human Factors", "40px Arial", COLOR);
+    var humanfactors = new createjs.Text("Human Factors", "40px Arial", "white");
     humanfactors.x = 180; 
     humanfactors.y = 35;
     humanfactors.textBaseline = "alphabetic";
 
-    var compsci = new createjs.Text("Computer Science", "40px Arial", COLOR);
+    var compsci = new createjs.Text("Computer Science", "40px Arial", "white");
     compsci.x = 530; 
     compsci.y = 35;
     compsci.textBaseline = "alphabetic";
 
-    var music = new createjs.Text("Music", "40px Arial", COLOR);
+    var music = new createjs.Text("Music", "40px Arial", "white");
     music.x = 450; 
     music.y = 845;
     music.textBaseline = "alphabetic";
 
-    var writing = new createjs.Text("Writing", "30px Arial", COLOR);
+    var writing = new createjs.Text("Writing", "30px Arial", "white");
     writing.x = 802; 
     writing.y = 790;
     writing.textBaseline = "alphabetic";
