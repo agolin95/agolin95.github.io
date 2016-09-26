@@ -7,6 +7,24 @@ var lastFmUrl = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&l
 httpGetAsync(lastFmUrl, getMusic);
 setupMusicControls();
 
+$("#spotifyTrack").bind("ended", function() {
+    var length = FINAL_TRACKS.length;
+
+    for (var i = 0; i < length-1; i++) {
+    	if ($("#spotifyTrack").attr("src") === FINAL_TRACKS[i].preview) {
+    		$("#spotifyTrack").attr("src", FINAL_TRACKS[i+1].preview);
+    		$("#displayalbum").text(FINAL_TRACKS[i+1].album);
+			$("#displayartist").text(FINAL_TRACKS[i+1].artist);
+    		document.getElementById("spotifyTrack").play();
+
+    		document.getElementById(FINAL_TRACKS[i+1].preview).firstChild.className = "albumPause";
+    		document.getElementById(FINAL_TRACKS[i].preview).firstChild.className = "albumPlay";
+    		break;
+    	}
+    }
+});
+
+
 function httpGetAsync(theUrl, callback) {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() { 
@@ -62,7 +80,9 @@ function populatePreviews(response) {
 				UNIQUE_TRACKS[i].preview = parsed.tracks.items[0].preview_url;
 				FINAL_TRACKS.push(UNIQUE_TRACKS[i]);
 				$("#spotifyTrack").attr("src", FINAL_TRACKS[0].preview);
-				$("#recentTracks").append("<div onclick='albumClick(this)' id=" + UNIQUE_TRACKS[i].preview + " class='singleTrack' style='background:url(" + UNIQUE_TRACKS[i].image + "); background-size: 200px 200px;'><div class='albumPlay'></div></div>");
+				$("#displayalbum").text(FINAL_TRACKS[0].album);
+				$("#displayartist").text(FINAL_TRACKS[0].artist);
+				$("#recentTracks").append("<div onclick='albumClick(this)' title='" + UNIQUE_TRACKS[i].album + "," + UNIQUE_TRACKS[i].artist +"' id=" + UNIQUE_TRACKS[i].preview + " class='singleTrack' style='background:url(" + UNIQUE_TRACKS[i].image + "); background-size: 200px 200px;'><div class='albumPlay'></div></div>");
 			}
 		}
 	}
@@ -109,6 +129,9 @@ function setupMusicControls() {
 }
 
 function updatePlays(clickedTrack) {
+	var albumandartist = clickedTrack.title.split(",");
+	$("#displayalbum").text(albumandartist[0]);
+	$("#displayartist").text(albumandartist[1]);
 	var playerSrc = $("#spotifyTrack").attr("src");
 	var playerTrack = document.getElementById(playerSrc);
 
