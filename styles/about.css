@@ -48,6 +48,12 @@ body {
 	line-height: 4.5vw;
 	background-color: (51, 51, 51, 0.8);
 	font-size: 1.5vw;
+	color: #333333;
+	background-color: rgba(255, 255, 255, .75);
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 5px;
+	border: solid #333 3px;
 }
 
 #newyork {
@@ -60,13 +66,10 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 5vw;
-	color: white;
 	margin-left: 6%;
 
 }
 
-#newyorktext {
-}
 
 #somervillesection {
 	background-color: #333333;

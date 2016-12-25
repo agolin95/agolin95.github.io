@@ -30,6 +30,7 @@ body {
 	max-width: calc((100vh/2) * 3);
 	margin-left: 0px;
 	/*border-bottom: solid white 4px;*/
+	
 }
 
 #aboutsection h4 {
@@ -38,7 +39,8 @@ body {
 
 #newyorktextwrap h4 {
 	font-weight: 600;
-	text-shadow: 2px 2px 5px #111111;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 #somervillesection {
