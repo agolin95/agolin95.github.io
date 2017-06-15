@@ -1,0 +1,171 @@
+
+.hline {
+    height: 3px;
+    background-color: #333333;
+    margin: 10px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#headerLine {
+    width: 100%;
+}
+
+
+body {
+    background-color: #333333;
+    font-family: "Nunito", sans-serif;
+}
+
+#siteTitle {
+    margin-bottom: 0px;
+}
+
+.contentSection, #header {
+    text-align: center;
+}
+
+.tagline {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.taglineImg {
+    width: 20%;
+    margin-right: 5%;
+    margin-left: 5%;
+    max-width: 150px;
+}
+
+h3 {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 700px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.button {
+    border: solid #333 2px;
+    border-radius: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#portfolioSection, #artSection {
+    display: none;
+}
+
+.portfolioSelector {
+    display: inline-block;
+    width: 20%;
+    margin-right: 5%;
+    margin-left: 5%;
+    max-width: 150px;
+}
+
+.portfolioSelector:hover {
+    opacity: 50%;
+}
+
+.portfolioSelectorImg {
+    width: 100%;
+}
+
+.portfolioItem {
+    width: 15%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    max-width: 130px;
+    margin-top: 15px;
+}
+
+.portfolioSelectorTitle {
+    font-size: 16px;
+}
+
+h4 {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.menuItem {
+    margin-bottom: 10px;
+}
+
+.menuItem:hover {
+    cursor: pointer;
+    color: #888;
+}
+
+#mainContent {
+    background-color: #FFF4E2;
+    min-width: 320px;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    margin-top: 0px;
+    min-height: 100vh;
+}
+
+
+
+/**********************
+        MODALS
+***********************/
+#hoverOver {
+	width: 250px;
+	background-color: white;
+	position: absolute;
+	display: none;
+	height: auto;
+	border-radius: 5px;
+	padding: 15px;
+	padding-top: 0px;
+	box-shadow: 2px 2px 10px 5px #333333;
+}
+
+#hoverOverTitle {
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+
+#modalTitle {
+	text-align: center;
+}
+
+.modal-dialog {
+	width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+
+.modal-content {
+    background-color: #FFF4E2;
+}
+
+#pdf {
+    height: 75vh;
+    width: 90%;
+}
+
+#modalPic {
+	margin-bottom: 15px!important;
+	display: none;
+	width: 90%;
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}

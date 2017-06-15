@@ -1,143 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Alexander Golin</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800" rel="stylesheet">  <!--My StyleSheets-->
-  <link rel="stylesheet" href="styles/about.css">
-  <link rel="stylesheet" href="styles/work.css">
-  <link rel="stylesheet" href="styles/music.css">
-  <link rel="stylesheet" href="styles/map.css">
-  <link rel="stylesheet" href="styles/scroll.css">
-  <link rel="stylesheet" href="styles/musicupdate.css">
-  <link rel="stylesheet" href="styles/gallery.css">
+    <meta charset="utf-8">
 
+    <title>Alexander Golin</title>
+    <meta name="description" content="Alexander Golin">
+    <meta name="author" content="Alexander Golin">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!--<script src="scripts/map.js"></script>-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.4.5/galleria.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
-  <!--<script src="https://spreadsheets.google.com/feeds/cells/17caI8ICBPxc7J7gQ3tdKalEps3iltywNruesM27m97U/od6/public/values?alt=json-in-script&callback=myCallback"></script>-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script src="main.js"></script>
 </head>
-<body onload="init()">
-<audio controls id="spotifyTrack" src=""></audio>
 
-<div id="topBar">
-  <div id="musicControls">
-    <div id="previousButton" class="musicButton"></div>
-    <div id="playButton" class="musicButton"></div>
-    <div id="nextButton" class="musicButton"></div>
-  </div>
-  <p><span id="displayalbum"></span> by <span id="displayartist"></span></p>
-</div>
-
-
-<div id="contentcontainer">
-
-<div class="toppicwrap">
-  <img class="toppic" src="pics/nycroof.jpg"/>
-  <h1 class="hello">My name is Alexander Golin.</h1>
-
-  <h2 style="text-align: center; margin-top: 300px; color: white;">Scroll Down</h2>
-</div>
-
-<div class="container-fluid" id="aboutsection">
-  <div id="abouttextwrap">
-	  <h4 id="abouttext" class="abouttext">&nbsp&nbsp&nbsp&nbsp&nbspI'm a senior at Tufts University in Somerville, MA, and I'm pursuing a dual degree in Human Factors Engineering and Computer Science. My greatest passion in life is music, and there is nothing I love more than finding new ways to combine psyschological and social principals with cutting edge technology to create unique solutions in the field of music.</h4>
-  </div>
-
-  <div id="newyork">
-    <!--<div id="libertywrap">
-      <img src="pics/liberty.jpg" id="liberty">
-    </div>-->
-    <div id="newyorktextwrap">
-      <h4 id="newyorktext" class="abouttext">&nbsp&nbsp&nbsp&nbsp&nbspI moved to New York City when I was three years old, and have lived all over the borough of Manhattan; from Chelsea and Hell's Kitchen to Washington Heights and East Harlem. I attended Hunter College Campus Schools from Kindergarten through Senior year of high school.</h4>
-    </div>    
-  </div>
-</div>
-
-<div class="container-fluid" id="somervillesection">
-    <img class="tuftspic" src="pics/tufts.jpg"/>
-    <h4 class="somervilletext" id="somervilletoptext">&nbsp&nbsp&nbsp&nbsp&nbspWhen I got to Tufts, I initally declared my major as Mechanical Engineering, but I later realized my passion lies far more in finding the hybrid paths forged by the interactions between psychology and engineering. I redeclared as a Human Factors Engineering and Computer Science double major, taking a particular interest in user centric web design. My courseload has included classes ranging anywhere between engineering sciences, applied computer programming, theoretical computer science, psychology and psychological methods, and design. My younger brother Nicholas, my favorite person in the world, joined me at Tufts as a member of the graduating class of 2019.
-    </h4>
-  <h4 class="somervilletext">
-    &nbsp&nbsp&nbsp&nbsp&nbspI am a member of Tau Beta Pi, the Engineering Honors Society, and I am the Webmaster of the Tufts chapther of the Human Factors and Ergonomics Society, which has a new website in the works. In addition to my academic involvement, I am also Music Director of 91.5 WMFO Medford, Tufts Freeform Radio, and I am a leader in the Tufts DIY Concert Booking Collective called Midnight/Applejam.</h4>
-</div>
-
-<div class="container-fluid" id="worksection">
-  <canvas id="workCanvas" height="850" width="1000">Your browser does not support the HTML5 canvas tag.</canvas>
-  <div id="hoverOver">
-    <h3 id="hoverOverTitle">Title</h3>
-    <!-- <img src="" id="hoverOverPic"> -->
-    <p id="hoverOverContent">lorem ipsum dolor sigui fontini alserdo djibouti</p>
-  </div>  
-
-  <div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" id="modalTitle">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-        <img id="modalPic" src=""> 
-          <p id="modalContent"></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
+<body>
+<div id="mainContent">
+    <div id="header">
+        <h1 id="siteTitle">Alexander Golin</h1>
+        <h4 class="menuItem" id="about">About</h4>
+        <h4 class="menuItem" id="projects">Projects</h4>
+        <h4 class="menuItem" id="art">Art</h4>
+        <div class="hline" id="headerLine"></div>
     </div>
-  </div>
-</div>
+    
+    <div class="contentSection" id="aboutSection">
+        <h2 class="tagline">I Love Music & Psychology & Technology</h2>
+        
+        
+        
+        <img class="taglineImg" src="img/horns.png"/>
+        <img class="taglineImg" src="img/brain.png"/>
+        <img class="taglineImg" src="img/circuit.png"/>
+        
+        <div class="hline"></div>
+        
+        <h3>I’m a passionate musician, a die-hard city boy, an avid proponent of user-centric design, and an empathetic humanist, sometimes to a fault. </h3>
+        
+        <h3>Seeking to hybridize my education, I double majored in Human Factors Engineering and Computer Science at Tufts University, and graduated Magna Cum Laude in the Spring of 2017.  I spent my college years as a leader in the Radio Broadcasting and DIY Concert Booking communities. I am currently working as a Software Engineer at Pegasystems in Cambridge, MA, and pursuing training as a Scrum Master and Agile Coach.
+        </h3>
 
-<div class="container-fluid" id="wmfosection">
-    <img class="wmfopic" src="pics/onair.jpg"/>
-    <h4 class="wmfotext">&nbsp&nbsp&nbsp&nbsp&nbspWhen I am not working on projects or problem sets for classes, I spend the majority of my time working as Music Director of 91.5 WMFO Medford, Tufts Freeform Radio. I have held the position since the end of my freshman year, and will continue through my graduation, at which point my younger brother will take over my post. My day to day responsibilities include updating the station's music database and communicating with music industry representatives, however I also spend a lot of time working on long term projects. In my time as Music Director, I have dramatically streamlined and modernized the influx of new music, I have redesigned the WMFO website, and I have led a community and ethos building effort throughout my four years as a member of the station.</h4>
-  </div>
-
-<!--
-
-<div class="container-fluid" id="gallerysection">
-    <h4 class="gallerytext">&nbsp&nbsp&nbsp&nbsp&nbspWhen I am not working on projects or problem sets for classes, I spend the majority of my time working as Music Director of 91.5 WMFO Medford, Tufts Freeform Radio. I have held the position since the end of my freshman year, and will continue through my graduation, at which point my younger brother will take over my post. My day to day responsibilities include updating the station's music database and communicating with music industry representatives, however I also spend a lot of time working on long term projects. In my time as Music Director, I have dramatically streamlined and modernized the influx of new music, I have redesigned the WMFO website, and I have led a community and ethos building effort throughout my four years as a member of the station.</h4>
-    <div id="gallery">
-            <img src="pics/gallery/1.jpg">
-            <img src="pics/gallery/2.jpg">
-            <img src="pics/gallery/3.jpg">
-            <img src="pics/gallery/4.jpg">
-            <img src="pics/gallery/5.jpg">
-            <img src="pics/gallery/6.jpg">
-            <img src="pics/gallery/7.jpg">
-            <img src="pics/gallery/8.jpg">
-            <img src="pics/gallery/9.jpg">
-            <img src="pics/gallery/10.jpg">
+        <h3>One day I want to professionally merge my three passions and change the landscape of the music industry to more potently emotionally engage consumers while provided more equitable compensation to artists. 
+        </h3>
+        
+        
     </div>
-</div>
+    
+    <div class="contentSection" id="portfolioSection">
+        
+        <h2 class="tagline">Academic & Professional Projects</h2>
+        
 
--->
+        
+        <div class="portfolioSelector" id="musicSelector">
+        <img class="portfolioSelectorImg" src="img/horns.png"/>
+        <h2 class="portfolioSelectorTitle">Music</h2>
+        </div>
+        
+        <div class="portfolioSelector" id="psychSelector">
+        <img class="portfolioSelectorImg" src="img/brain.png"/>
+        <h2 class="portfolioSelectorTitle">Psychology</h2>
+        </div>
+        
+        <div class="portfolioSelector" id="techSelector">
+        <img class="portfolioSelectorImg" src="img/circuit.png"/>
+        <h2 class="portfolioSelectorTitle">Technology</h2>
+        </div>
+        
+        <div class="hline"></div>
+        
+        <div id="portfolioList">
+            <img id="bandmate" class="portfolioItem music psych tech" src="img/bandmate.png"/>
+            <img id="vinyl" class="portfolioItem music psych" src="img/vinyl.png"/>
+            <img id="milkcrate" class="portfolioItem music psych tech" src="img/milkcrate.png"/>
+            <img id="apportech" class="portfolioItem psych" src="img/apportech.png"/>
+            <img id="bandcamp" class="portfolioItem music psych tech" src="img/bandcamp.png"/>
+            <img id="alz" class="portfolioItem music psych" src="img/alz.png"/>
+            <img id="strum" class="portfolioItem music psych tech" src="img/strum.png"/>
+            <img id="theory" class="portfolioItem music tech" src="img/theory.png"/>
+            <!-- <img id="orbit" class="portfolioItem music tech" src="img/orbit.png"/> -->
+            <img id="neuro" class="portfolioItem psych" src="img/neuromarketing.png"/>
+           <!-- <img id="synth" class="portfolioItem music tech" src="img/synth.png"/> -->
+        </div>
+        
+        <div id="hoverOver">
+          <h3 id="hoverOverTitle">Title</h3>
+          <!-- <img src="" id="hoverOverPic"> -->
+          <p id="hoverOverContent">lorem ipsum dolor sigui fontini alserdo djibouti</p>
+        </div>  
 
-  </div>
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" id="modalTitle">Modal Header</h4>
+              </div>
+              <div class="modal-body">
+              <img id="modalPic" src=""> 
+                <p id="modalContent"></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-</div>
-
-<div class="container-fluid" id="musicsection">
-  <!---<h1 class="sectionheader">What I'm Listening To</h1>-->
-  <div id="recentTracks"></div>
-</div>
-<!--
-<div class="container-fluid" id="mapsection">
-  <h1 class="sectionheader">Where I've Been</h1>
-  <div id="map_canvas"></div>
-</div>
--->
-
-<script src="scripts/venn.js"></script>
-<script src="scripts/music.js"></script>
-<script src="scripts/scroll.js"></script>
-<!--<script src="scripts/gallery.js"></script>-->
-<!--<script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAbBBW1EKzdtH5S9ugMpBcxmjElV3ciGuk&callback=initMap'></script>-->
+        
+    </div>
+    
+    <div class="contentSection" id="artSection">
+        <h1>ART PAGE</h1>
+    </div>
+    
+    
+</div>  
 </body>
 </html>
