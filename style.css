@@ -79,7 +79,7 @@ h3 {
     width: 100%;
 }
 
-.portfolioItem {
+.portfolioItem, .musicItem {
     width: 15%;
     margin-left: 2.5%;
     margin-right: 2.5%;
@@ -126,14 +126,14 @@ h4 {
 ***********************/
 #hoverOver {
 	width: 250px;
-	background-color: white;
+	background-color: #FFF4E2;
 	position: absolute;
 	display: none;
 	height: auto;
 	border-radius: 5px;
+    border: solid #333333 2px;
 	padding: 15px;
 	padding-top: 0px;
-	box-shadow: 2px 2px 10px 5px #333333;
 }
 
 #hoverOverTitle {
@@ -168,4 +168,12 @@ h4 {
 	max-width: 400px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.aboutText {
+    padding-bottom: 50px;
+}
+
+#portfolioList {
+    padding-bottom: 50px;
 }
