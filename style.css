@@ -80,11 +80,13 @@ h3 {
 }
 
 .portfolioItem, .musicItem {
-    width: 15%;
+    width: 12%;
     margin-left: 2.5%;
     margin-right: 2.5%;
-    max-width: 130px;
+    max-width: 120px;
     margin-top: 15px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .portfolioSelectorTitle {
@@ -176,4 +178,36 @@ h4 {
 
 #portfolioList {
     padding-bottom: 50px;
+}
+
+.musicItemImg {
+    width: 100%;
+}
+
+.musicItemTitle {
+    font-size: 12px;
+}
+
+
+@media only screen and (max-width: 600px) {
+   .musicItemTitle {
+        display: none;
+    }
+}
+
+.subTagline {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#playButton {
+    background-image: url("img/play.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    display: none;
+    margin-bottom: 15px;
 }

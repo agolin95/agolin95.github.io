@@ -170,16 +170,53 @@ $(document).ready(function() {
 */
     
 /////// MUSIC PAGE ///////
-        $('.musicItem').hover(function() {
-            $(this).attr("src","img/"+$(this).attr("id")+"inv.png");
+        $('.musicItemImg').hover(function() {
+            if (!$(this).hasClass("clicked")){
+                $(this).attr("src","img/"+$(this).attr("id")+"inv.png");
+            }
         }, function () {
-            $(this).attr("src","img/"+$(this).attr("id")+".png");
+            if (!$(this).hasClass("clicked")){
+                $(this).attr("src","img/"+$(this).attr("id")+".png");
+            }
         });
     
-        $('.musicItem').click(function() {
-            $('#myMusicPlayer').attr("src","music/"+$(this).attr("id")+".mp3");
-            $('#myMusicPlayer').get(0).play();
+        $('.musicItemImg').click(function() {
+            if ($('#myMusicPlayer').attr("src") == "music/"+$(this).attr("id")+".mp3" && !$('#myMusicPlayer').get(0).paused) {
+                $('#myMusicPlayer').get(0).pause();
+                $('#playButton').css("background-image","url(img/play.png)"); 
+            }
+            else if ($('#myMusicPlayer').attr("src") == "music/"+$(this).attr("id")+".mp3") {
+                $('#myMusicPlayer').get(0).play();
+                $('#playButton').css("background-image","url(img/pause.png)"); 
+            }
+            else {
+                $('#myMusicPlayer').attr("src","music/"+$(this).attr("id")+".mp3");
+                $('#myMusicPlayer').get(0).play();
+                $('#playButton').css("background-image","url(img/pause.png)"); 
+            }            
+            $('.musicItemImg').each(function () {
+                $(this).attr("src","img/"+$(this).attr("id")+".png");
+                $(this).removeClass("clicked");
+            });
+            
+            $(this).attr("src","img/"+$(this).attr("id")+"inv.png");
+            $(this).addClass("clicked");
+            $('#playButton').css("display", "block");
         });
+    
+        $('#playButton').click(function () {
+            if ($('#myMusicPlayer').get(0).paused) {
+                $('#myMusicPlayer').get(0).play();
+                $(this).css("background-image","url(img/pause.png)"); 
+            }
+            else {
+                $('#myMusicPlayer').get(0).pause();
+                $(this).css("background-image","url(img/play.png)"); 
+            }
+            
+        });
+    
+        
 
     
 });
