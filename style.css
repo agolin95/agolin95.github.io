@@ -29,6 +29,8 @@ body {
 .tagline {
     margin-bottom: 20px;
     margin-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .taglineImg {
@@ -61,6 +63,7 @@ h3 {
 
 #portfolioSection, #artSection {
     display: none;
+    padding-bottom: 50px;
 }
 
 .portfolioSelector {
@@ -79,7 +82,7 @@ h3 {
     width: 100%;
 }
 
-.portfolioItem, .musicItem {
+.portfolioItem, .musicItem, .writingItem {
     width: 12%;
     margin-left: 2.5%;
     margin-right: 2.5%;
@@ -87,6 +90,7 @@ h3 {
     margin-top: 15px;
     display: inline-block;
     vertical-align: top;
+    cursor: pointer;
 }
 
 .portfolioSelectorTitle {
@@ -128,14 +132,16 @@ h4 {
 ***********************/
 #hoverOver {
 	width: 250px;
-	background-color: #FFF4E2;
+	background-color: #333333;
+    color: #FFF4E2;
 	position: absolute;
 	display: none;
 	height: auto;
 	border-radius: 5px;
-    border: solid #333333 2px;
+    border: solid #FFF4E2 2px;
 	padding: 15px;
 	padding-top: 0px;
+    text-align: center;
 }
 
 #hoverOverTitle {
@@ -152,14 +158,16 @@ h4 {
     margin-left: auto;
     margin-right: auto;
     max-width: 1000px;
+    text-align: center;
 }
 
 .modal-content {
-    background-color: #FFF4E2;
+    background-color: #333333;
+    color: white;
 }
 
 #pdf {
-    height: 75vh;
+    height: 70vh;
     width: 90%;
 }
 
@@ -180,17 +188,17 @@ h4 {
     padding-bottom: 50px;
 }
 
-.musicItemImg {
+.musicItemImg, .writingItemImg {
     width: 100%;
 }
 
-.musicItemTitle {
+.musicItemTitle, .writingItemTitle {
     font-size: 12px;
 }
 
 
 @media only screen and (max-width: 600px) {
-   .musicItemTitle {
+   .musicItemTitle, .writingItemTitle {
         display: none;
     }
 }
@@ -210,4 +218,5 @@ h4 {
     margin-left: auto;
     display: none;
     margin-bottom: 15px;
+    cursor: pointer;
 }
