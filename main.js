@@ -1,12 +1,12 @@
 var mouseX;
 var mouseY;
 $(document).mousemove( function(e) {
-   mouseX = e.pageX; 
+   mouseX = e.pageX;
    mouseY = e.pageY;
-}); 
+});
 
 $(document).ready(function() {
-    
+
 /////// MENU ///////
     $('#about').click(function() {
         $('#aboutSection').slideDown();
@@ -14,85 +14,89 @@ $(document).ready(function() {
         $('#artSection').slideUp();
 
     });
-    
+
     $('#projects').click(function() {
         $('#aboutSection').slideUp();
         $('#portfolioSection').slideDown();
         $('#artSection').slideUp();
 
     });
-    
+
     $('#art').click(function() {
         $('#aboutSection').slideUp();
         $('#portfolioSection').slideUp();
         $('#artSection').slideDown();
     });
-    
-    
-/////// PORTFOLIO ///////    
+
+
+/////// PORTFOLIO ///////
     $('#musicSelector').hover(function() {
-            $('#psychSelector').fadeTo(100, .2); 
+            $('#psychSelector').fadeTo(100, .2);
             $('#techSelector').fadeTo(100, .2);
-            
+
             $('.portfolioItem').each(function (){
                 if (!$(this).hasClass("music")) {
                     $(this).fadeTo(100, .2);
                 }
             })
-            
+
         }, function(){
-            $('#psychSelector').fadeTo(100, 1); 
-            $('#techSelector').fadeTo(100, 1); 
-            
+            $('#psychSelector').fadeTo(100, 1);
+            $('#techSelector').fadeTo(100, 1);
+
             $('.portfolioItem').each(function (){
                 if (!$(this).hasClass("music")) {
                     $(this).fadeTo(100, 1);
                 }
             })
         });
-    
+
+    $('.portfolioSelector').click(function() {
+      $('.')
+    });
+
     $('#psychSelector').hover(function() {
-            $('#musicSelector').fadeTo(100, .2); 
-            $('#techSelector').fadeTo(100, .2); 
-            
+            $('#musicSelector').fadeTo(100, .2);
+            $('#techSelector').fadeTo(100, .2);
+
             $('.portfolioItem').each(function (){
                 if (!$(this).hasClass("psych")) {
                     $(this).fadeTo(100, .2);
                 }
             })
         }, function(){
-            $('#musicSelector').fadeTo(100, 1); 
-            $('#techSelector').fadeTo(100, 1); 
-            
+            $('#musicSelector').fadeTo(100, 1);
+            $('#techSelector').fadeTo(100, 1);
+
             $('.portfolioItem').each(function (){
                 if (!$(this).hasClass("psych")) {
                     $(this).fadeTo(100, 1);
                 }
             })
         });
-    
+
     $('#techSelector').hover(function() {
-            $('#musicSelector').fadeTo(100, .2); 
-            $('#psychSelector').fadeTo(100, .2); 
-            
+            $('#musicSelector').fadeTo(100, .2);
+            $('#psychSelector').fadeTo(100, .2);
+
             $('.portfolioItem').each(function (){
                 if (!$(this).hasClass("tech")) {
                     $(this).fadeTo(100, .2);
                 }
             })
         }, function(){
-            $('#musicSelector').fadeTo(100, 1); 
-            $('#psychSelector').fadeTo(100, 1); 
-            
+            $('#musicSelector').fadeTo(100, 1);
+            $('#psychSelector').fadeTo(100, 1);
+
             $('.portfolioItem').each(function (){
                 if (!$(this).hasClass("tech")) {
                     $(this).fadeTo(100, 1);
                 }
             })
         });
-    
+
     function makeItem(id, name, x, y, size, image, file, altfile, vid, description) {
-    
+
     // ON CLICK
     $(id).click(function(){
 
@@ -106,7 +110,7 @@ $(document).ready(function() {
         }
         else {
             $("#modalPic").css("display", "none");
-        }        
+        }
         if (vid != ""){
             $("#modalContent").append('<iframe width="560" height="315" src=' + vid + ' frameborder="0" allowfullscreen></iframe>');
 
@@ -116,34 +120,31 @@ $(document).ready(function() {
         }
         if (altfile.substring(1, 7) == "iframe") {
             $("#modalContent").prepend(altfile);
-        } 
+        }
         else if (altfile !=  ""){
             $("#modalContent").append('<embed src="work' + altfile + '" width="90%" height="700px" />');
         }
     });
-   
+
     // HOVER BEGIN
     $(id).hover(function(){
         $("#hoverOverPic").attr('src', image);
         $("#hoverOverTitle").html(name);
         $("#hoverOverContent").html(description);
 
-        var boxHeight = $("#hoverOver").height()+10;
-        
-        if (mouseX < $(window).width()/2){
-            $("#hoverOver").css({'top':mouseY-boxHeight + 50,'left':mouseX+50, 'display':'block'});
-        }
-        else {
-            $("#hoverOver").css({'top':mouseY-boxHeight + 50,'left':mouseX-300, 'display':'block'});
-        }
+        console.log($(this).get(0).getBoundingClientRect().top);
+
+        $("#hoverOver").css({'top':$(this).get(0).getBoundingClientRect().top - 230,
+                             'left':$(this).get(0).getBoundingClientRect().left-$(this).get(0).getBoundingClientRect().width/2,
+                             'display':'block'});
         $(this).attr("src","img/"+$(this).attr("id")+"inv.png");
-        
+
     }, function(){
             $("#hoverOver").css({'display':'none'});
             $(this).attr("src","img/"+$(this).attr("id")+".png");
     });
 }
-    
+
     makeItem("#alz","This Song Takes Me Back <br> 2014", 345, 370, 25, "", "/hf-music/thissongtakesmeback.pdf", "", "", "Research paper discussing the therapeutic effects of music on patients afflicted with Alzheimer's Disease. This was the final paper for the Tufts class Psychology of Music.");
     makeItem("#vinyl", "The Vinyl Revival <br> 2015", 367, 420, 25, "", "/hf-music/vinylpaper.pdf", "/hf-music/vinylppt.pdf", "https://www.youtube.com/embed/Cb_uoEHR0Fs", "Report and presentation on vinyl records' recent surge in popularity. This was the final paper and project for the Tufts class Technical and Managerial Communication.");
     makeItem("#strum", "Strum Buddy <br> 2015", 295, 500, 25, "", "/hf-music/strumbuddy.pdf", "", "", "Assistive tecnology design of a guitar playing device for disabled individuals. This was the final project for the Tufts class Intro to Human Factors and Ergonomics.");
@@ -166,7 +167,7 @@ $(document).ready(function() {
     makeItem("#godfather", "The Godfather II Scene Analysis <br> 2014", 850, 670, 15,"", "/writing/godfather.pdf", "", "", "Scene analysis of The Godfather II. This was the final writing piece for the Tufts Class How Films Think.");
     makeItem("#kane", "Citizen Kane Scene Analysis <br> 2014", 850, 600, 15,"", "/writing/kane.pdf", "", "", "Scene analysis of Citizen Kane. This was one of two intermiate writing pieces for the Tufts Class How Films Think.");
     makeItem("#killbill", "Kill Bill Vol. 2 Scene Analysis <br> 2014", 910, 680, 15,"", "/writing/killbill.pdf", "", "", "Scene analysis of The Godfather II. This was one of two intermiate writing pieces for the Tufts Class How Films Think.");
-    
+
 /////// MUSIC PAGE ///////
         $('.musicItemImg').hover(function() {
             if (!$(this).hasClass("clicked")){
@@ -177,44 +178,44 @@ $(document).ready(function() {
                 $(this).attr("src","img/"+$(this).attr("id")+".png");
             }
         });
-    
+
         $('.musicItemImg').click(function() {
             if ($('#myMusicPlayer').attr("src") == "music/"+$(this).attr("id")+".mp3" && !$('#myMusicPlayer').get(0).paused) {
                 $('#myMusicPlayer').get(0).pause();
-                $('#playButton').css("background-image","url(img/play.png)"); 
+                $('#playButton').css("background-image","url(img/play.png)");
             }
             else if ($('#myMusicPlayer').attr("src") == "music/"+$(this).attr("id")+".mp3") {
                 $('#myMusicPlayer').get(0).play();
-                $('#playButton').css("background-image","url(img/pause.png)"); 
+                $('#playButton').css("background-image","url(img/pause.png)");
             }
             else {
                 $('#myMusicPlayer').attr("src","music/"+$(this).attr("id")+".mp3");
                 $('#myMusicPlayer').get(0).play();
-                $('#playButton').css("background-image","url(img/pause.png)"); 
-            }            
+                $('#playButton').css("background-image","url(img/pause.png)");
+            }
             $('.musicItemImg').each(function () {
                 $(this).attr("src","img/"+$(this).attr("id")+".png");
                 $(this).removeClass("clicked");
             });
-            
+
             $(this).attr("src","img/"+$(this).attr("id")+"inv.png");
             $(this).addClass("clicked");
             $('#playButton').css("display", "block");
         });
-    
+
         $('#playButton').click(function () {
             if ($('#myMusicPlayer').get(0).paused) {
                 $('#myMusicPlayer').get(0).play();
-                $(this).css("background-image","url(img/pause.png)"); 
+                $(this).css("background-image","url(img/pause.png)");
             }
             else {
                 $('#myMusicPlayer').get(0).pause();
-                $(this).css("background-image","url(img/play.png)"); 
+                $(this).css("background-image","url(img/play.png)");
             }
-            
-        });
-    
-        
 
-    
+        });
+
+
+
+
 });
