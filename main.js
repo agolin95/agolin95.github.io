@@ -49,11 +49,8 @@ $(document).ready(function() {
                     $(this).fadeTo(100, 1);
                 }
             })
-        });
-
-    $('.portfolioSelector').click(function() {
-      $('.')
-    });
+        }
+    );
 
     $('#psychSelector').hover(function() {
             $('#musicSelector').fadeTo(100, .2);
