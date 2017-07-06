@@ -26,10 +26,9 @@ pyrtho<!DOCTYPE html>
 <div id="mainContent">
     <div id="header">
         <h1 id="siteTitle">Alexander Golin</h1>
-        <h4 class="menuItem" id="about">About</h4>
-        <h4 class="menuItem" id="projects">Projects</h4>
-        <h4 class="menuItem" id="art">Art</h4>
-        <div class="hline" id="headerLine"></div>
+        <h4 class="menuItem" id="about" data-section="aboutSection">About</h4>
+        <h4 class="menuItem" id="projects" data-section="portfolioSection">Projects</h4>
+        <h4 class="menuItem" id="art" data-section="artSection">Art</h4>
     </div>
 
     <div class="contentSection" id="aboutSection">
@@ -58,19 +57,19 @@ pyrtho<!DOCTYPE html>
 
 
 
-        <div class="portfolioSelector" id="musicSelector">
-        <img class="portfolioSelectorImg" src="img/horns.png"/>
-        <h5 class="portfolioSelectorTitle">Music</h5>
+        <div class="portfolioSelector" id="musicSelector" data-selector="music">
+            <img class="portfolioSelectorImg" src="img/horns.png"/>
+            <h5 class="portfolioSelectorTitle">Music</h5>
         </div>
 
-        <div class="portfolioSelector" id="psychSelector">
-        <img class="portfolioSelectorImg" src="img/brain.png"/>
-        <h5 class="portfolioSelectorTitle">Psychology</h5>
+        <div class="portfolioSelector" id="psychSelector" data-selector="psych">
+            <img class="portfolioSelectorImg" src="img/brain.png"/>
+            <h5 class="portfolioSelectorTitle">Psychology</h5>
         </div>
 
-        <div class="portfolioSelector" id="techSelector">
-        <img class="portfolioSelectorImg" src="img/circuit.png"/>
-        <h5 class="portfolioSelectorTitle">Technology</h5>
+        <div class="portfolioSelector" id="techSelector" data-selector="tech">
+            <img class="portfolioSelectorImg" src="img/circuit.png"/>
+            <h5 class="portfolioSelectorTitle">Technology</h5>
         </div>
 
         <div class="hline"></div>

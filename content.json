@@ -1,0 +1,18 @@
+{
+    {
+        "title": "This Song Takes Me Back",
+        "year": "2014",
+		"pdf1": "/hf-music/thissongtakesmeback.pdf",
+        "pdf2": "",
+        "embed": "",
+        "description": "Research paper discussing the therapeutic effects of music on patients afflicted with Alzheimer's Disease. This was the final paper for the Tufts class Psychology of Music."
+    },
+    {
+        "title": "The Vinyl Revival",
+        "year": "2015",
+		"pdf1": "/hf-music/vinylpaper.pdf",
+        "pdf2": "/hf-music/vinylppt.pdf",
+        "embed": "https://www.youtube.com/embed/Cb_uoEHR0Fs",
+        "description": "Report and presentation on vinyl records' recent surge in popularity. This was the final paper and project for the Tufts class Technical and Managerial Communication."
+    }
+}

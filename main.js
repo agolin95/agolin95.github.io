@@ -1,89 +1,25 @@
 $(document).ready(function() {
 
+    $.getJSON("content.json", function(data) {
+        console.log(data);
+    });
+
 /////// MENU ///////
-    $('#about').click(function() {
-        $('#aboutSection').slideDown();
-        $('#portfolioSection').slideUp();
-        $('#artSection').slideUp();
-
-    });
-
-    $('#projects').click(function() {
-        $('#aboutSection').slideUp();
-        $('#portfolioSection').slideDown();
-        $('#artSection').slideUp();
-
-    });
-
-    $('#art').click(function() {
-        $('#aboutSection').slideUp();
-        $('#portfolioSection').slideUp();
-        $('#artSection').slideDown();
+    $('.menuItem').click(function(){
+        $('.contentSection').not($('#'+$(this).data("section"))).slideUp();
+        $('#'+$(this).data("section")).slideDown();
     });
 
 
-/////// PORTFOLIO ///////
-    $('#musicSelector').hover(function() {
-            $('#psychSelector').fadeTo(100, .2);
-            $('#techSelector').fadeTo(100, .2);
-
-            $('.portfolioItem').each(function (){
-                if (!$(this).hasClass("music")) {
-                    $(this).fadeTo(100, .2);
-                }
-            })
-
-        }, function(){
-            $('#psychSelector').fadeTo(100, 1);
-            $('#techSelector').fadeTo(100, 1);
-
-            $('.portfolioItem').each(function (){
-                if (!$(this).hasClass("music")) {
-                    $(this).fadeTo(100, 1);
-                }
-            })
+/////// PORTFOLIO HOVER///////
+    $('.portfolioSelector').hover(function() {
+            $('.portfolioSelector').not($(this)).fadeTo(100, .2);
+            $('.portfolioItem').not($("."+$(this).data("selector"))).fadeTo(100, .2);
+        }, function() {
+            $('.portfolioSelector').not($(this)).fadeTo(100, 1);
+            $('.portfolioItem').not($("."+$(this).data("selector"))).fadeTo(100, 1);
         }
     );
-
-    $('#psychSelector').hover(function() {
-            $('#musicSelector').fadeTo(100, .2);
-            $('#techSelector').fadeTo(100, .2);
-
-            $('.portfolioItem').each(function (){
-                if (!$(this).hasClass("psych")) {
-                    $(this).fadeTo(100, .2);
-                }
-            })
-        }, function(){
-            $('#musicSelector').fadeTo(100, 1);
-            $('#techSelector').fadeTo(100, 1);
-
-            $('.portfolioItem').each(function (){
-                if (!$(this).hasClass("psych")) {
-                    $(this).fadeTo(100, 1);
-                }
-            })
-        });
-
-    $('#techSelector').hover(function() {
-            $('#musicSelector').fadeTo(100, .2);
-            $('#psychSelector').fadeTo(100, .2);
-
-            $('.portfolioItem').each(function (){
-                if (!$(this).hasClass("tech")) {
-                    $(this).fadeTo(100, .2);
-                }
-            })
-        }, function(){
-            $('#musicSelector').fadeTo(100, 1);
-            $('#psychSelector').fadeTo(100, 1);
-
-            $('.portfolioItem').each(function (){
-                if (!$(this).hasClass("tech")) {
-                    $(this).fadeTo(100, 1);
-                }
-            })
-        });
 
     function makeItem(id, name, x, y, size, image, file, altfile, vid, description) {
 
@@ -121,9 +57,6 @@ $(document).ready(function() {
         $("#hoverOverPic").attr('src', image);
         $("#hoverOverTitle").html(name);
         $("#hoverOverContent").html(description);
-
-        console.log($(this).get(0).getBoundingClientRect().top);
-
         $("#hoverOver").css({'top':$(this).get(0).getBoundingClientRect().top - 230,
                              'left':$(this).get(0).getBoundingClientRect().left-$(this).get(0).getBoundingClientRect().width/2,
                              'display':'block'});
@@ -170,16 +103,17 @@ $(document).ready(function() {
         });
 
         $('.musicItemImg').click(function() {
-            if ($('#myMusicPlayer').attr("src") == "music/"+$(this).attr("id")+".mp3" && !$('#myMusicPlayer').get(0).paused) {
+            var songId = "music/"+$(this).attr("id")+".mp3";
+            if ($('#myMusicPlayer').attr("src") == songId && !$('#myMusicPlayer').get(0).paused) {
                 $('#myMusicPlayer').get(0).pause();
                 $('#playButton').css("background-image","url(img/play.png)");
             }
-            else if ($('#myMusicPlayer').attr("src") == "music/"+$(this).attr("id")+".mp3") {
+            else if ($('#myMusicPlayer').attr("src") == songId) {
                 $('#myMusicPlayer').get(0).play();
                 $('#playButton').css("background-image","url(img/pause.png)");
             }
             else {
-                $('#myMusicPlayer').attr("src","music/"+$(this).attr("id")+".mp3");
+                $('#myMusicPlayer').attr("src", songId);
                 $('#myMusicPlayer').get(0).play();
                 $('#playButton').css("background-image","url(img/pause.png)");
             }
