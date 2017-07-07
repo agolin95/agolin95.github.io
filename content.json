@@ -1,18 +1,107 @@
-{
+[
     {
-        "title": "This Song Takes Me Back",
+        "title": "Breadboard Synthesizer",
+        "tagline": "Synthesizer",
+        "year": "2013",
+        "id": "synth",
+        "image": "/cs-music/synthesizer.png",
+        "description": "Introductory music engineering project. Breadboard synthesizer representing a single octave keyboard. Run on MATLAB and an internal battery. This was the final project for the Tufts class Music and the Art of Engineering.",
+        "target": "#portfolioList13"
+    },
+    {
+        "title": "This Song Takes Me Back: Music Therapy & Alzheimer's",
+        "tagline": "Music Therapy",
         "year": "2014",
+        "id": "alz",
 		"pdf1": "/hf-music/thissongtakesmeback.pdf",
-        "pdf2": "",
-        "embed": "",
-        "description": "Research paper discussing the therapeutic effects of music on patients afflicted with Alzheimer's Disease. This was the final paper for the Tufts class Psychology of Music."
+        "description": "Research paper discussing the therapeutic effects of music on patients afflicted with Alzheimer's Disease. This was the final paper for the Tufts class Psychology of Music.",
+        "target": "#portfolioList14"
+    },
+    {
+        "title": "Music Theory Trainer",
+        "tagline": "Theory Trainer",
+        "year": "2014",
+        "id": "theory",
+        "image": "/cs-music/trainer.png",
+		"pdf1": "/cs-music/lettertransmission.pdf",
+        "description": "VBA project which implements the UI and functionality of a music theory training program. This was the final project for the Tufts class Intro to Computing in Engineering.",
+        "target": "#portfolioList14"
+    },
+    {
+        "title": "Orbit Turntable CAD",
+        "tagline": "Turntable CAD",
+        "year": "2015",
+        "id": "orbit",
+        "image": "/hf-music/turntable.jpg",
+        "description": "CAD model of the Orbit Turntable created in Google SketchUp. Intermediate project for the Tufts class Intro to Human Factors and Ergonomics.",
+        "target": "#portfolioList15"
     },
     {
         "title": "The Vinyl Revival",
+        "tagline": "Vinyl Revival",
         "year": "2015",
+        "id": "vinyl",
 		"pdf1": "/hf-music/vinylpaper.pdf",
         "pdf2": "/hf-music/vinylppt.pdf",
-        "embed": "https://www.youtube.com/embed/Cb_uoEHR0Fs",
-        "description": "Report and presentation on vinyl records' recent surge in popularity. This was the final paper and project for the Tufts class Technical and Managerial Communication."
+        "youtube": "https://www.youtube.com/embed/Cb_uoEHR0Fs",
+        "description": "Report and presentation on vinyl records' recent surge in popularity. This was the final paper and project for the Tufts class Technical and Managerial Communication.",
+        "target": "#portfolioList15"
+    },
+    {
+        "title": "MilkCrate Music Library Application",
+        "tagline": "MilkCrate",
+        "year": "2015",
+        "id": "milkcrate",
+		"pdf1": "/hf-music/milkcrate.pdf",
+        "description": "Interface critique, reactive product design, and product pitch of music library platforms. This was the final project for the Tufts class Engineering Psychology.",
+        "target": "#portfolioList15"
+    },
+    {
+        "title": "Strum Buddy Assistive Guitar Tool",
+        "tagline": "Strum Buddy",
+        "year": "2015",
+        "id": "strum",
+		"pdf1": "/hf-music/strumbuddy.pdf",
+        "description": "Assistive technology design of a guitar playing device for disabled individuals. This was the final project for the Tufts class Intro to Human Factors and Ergonomics.",
+        "target": "#portfolioList15"
+    },
+    {
+        "title": "BandMate Musician Matching Application",
+        "tagline": "BandMate",
+        "year": "2016",
+        "id": "bandmate",
+		"pdf1": "/hf-music/bandmate.pdf",
+        "marvel": "https://marvelapp.com/527acjg?emb=1",
+        "youtube": "https://www.youtube.com/embed/-a32XofGc8k",
+        "description": "UX research process and design of mobile application for band socialization. This was the final project for the Tufts class Human Computer Interaction.",
+        "target": "#portfolioList16"
+    },
+    {
+        "title": "BandCamp Product Assessment",
+        "tagline": "BandCamp Assessment",
+        "year": "2016",
+        "id": "bandcamp",
+		"pdf1": "/hf-music/bandcamp.pdf",
+        "description": "UX product assessment of the Bandcamp desktop website. This was an intermediate project for the Tufts class Human Computer Interaction.",
+        "target": "#portfolioList16"
+    },
+    {
+        "title": "Apportech Universal Gardening Tool",
+        "tagline": "Apportech",
+        "year": "2016",
+        "id": "apportech",
+		"pdf1": "/hf/vftreport.pdf",
+        "pdf2": "/hf/vftppt.pdf",
+        "description": "Complete UX research study and subsequent product design of a universal gardening device. Final semester-long project for the Tufts class Human Factors in Product Design.",
+        "target": "#portfolioList16"
+    },
+    {
+        "title": "Neuromarketing Presentation",
+        "tagline": "Neuromarketing",
+        "year": "2016",
+        "id": "neuro",
+		"pdf1": "/hf/neuromarket.pdf",
+        "description": "Group presentation on neuromarketing in the modern world, used for leading a two and a half hour seminar class. Final seminar presentation for the Tufts class Advanced Engineering Psychology.",
+        "target": "#portfolioList16"
     }
-}
+]
