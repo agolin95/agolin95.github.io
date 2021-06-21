@@ -1,0 +1,211 @@
+:root {
+    --white: #fff;
+    --gray: #aaa;
+    --black: #111;
+    --nav-height: 50px;
+    --foot-height: 30px;
+    --border-width: 2px;
+}
+
+html {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Sen', sans-serif;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none; 
+}
+
+a:hover {
+   text-decoration: underline; 
+}
+
+#nav {
+    background: var(--black);
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    height: var(--nav-height);
+    width: 100vw;
+    border-bottom: solid var(--white) var(--border-width);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    vertical-align: middle;
+    box-shadow: 0px 0px 20px 0px black;
+}
+
+#nav li {
+    position: relative;
+    font-size: 20px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    height: var(--nav-height);
+    align-items: center;
+    display: inline-flex;
+    width: 100px;
+    justify-content: center;
+}
+
+#nav img {
+    height: 70%;
+}
+
+.container {
+    text-align: center;
+    margin-top: var(--nav-height);
+}
+
+.container h1 {
+    text-align: center;
+    margin-top: var(--nav-height);
+    text-shadow: 0px 0px 20px black;
+    padding-top: 20px;
+}
+
+.container h2 {
+    font-size: clamp(30px, 6vw, 150px);
+    padding-bottom: 10px;
+}
+
+#splash h1 {
+    font-size: clamp(30px, 6vw, 150px);
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+#splash .profile {
+    width: clamp(100px, 20vw, 250px);
+    height: clamp(100px, 20vw, 250px);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    box-shadow: 0px 0px 20px 0px black;
+    border: solid var(--black) 5px;
+    outline: solid var(--white) 3px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("/img/profile.png");
+    animation-name: profPic;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+.aboutText {
+    width: clamp(300px, 80vw, 700px);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    line-height: 25px;
+    text-align: justify;
+    opacity: 100%;
+    animation-name: aboutText;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+.aboutText p {
+    padding: 5px;
+}
+
+.workItem {
+    display: inline-block;
+    width: clamp(200px, 30vw, 500px);
+    height: clamp(120px, 12vw, 300px);
+    border: solid white 2px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: top;
+    background-color: transparent;
+    -webkit-transition: background-color 300ms ease;
+    -ms-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+}
+
+.workItem:hover {
+    background-color: rgba(0,0,0,0.4);
+    cursor: pointer;
+    -webkit-transition: background-color 300ms ease;
+    -ms-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+}
+
+.workTitle {
+    font-size: 20px;
+}
+
+.workDate {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.workSummary {
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 1000;
+    top: 0;
+    text-align: center;
+}
+
+.overlay.hidden {
+    display: none;
+}
+
+.overlay embed {
+    padding-top: calc(var(--nav-height) + 20px);
+    padding-bottom: calc(var(--foot-height) + 20px);
+    width: 90vw;
+    max-width: 1000px;
+    height: calc(100vh - ((var(--nav-height) + 20px) + (var(--foot-height) + 20px)));
+}
+
+.overlay img {
+    padding-top: calc(var(--nav-height) + 20px);
+    padding-bottom: calc(var(--foot-height) + 20px);
+    height: calc(100vh - ((var(--nav-height) + 20px) + (var(--foot-height) + 20px)));
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    width: 100vw;
+    text-align: center;
+    height: var(--foot-height);
+}
+
+#footer img {
+    width: 20px;
+    margin-left: clamp(10px, 2vw, 20px);
+    margin-right: clamp(10px, 2vw, 20px);
+}
+
+
+
+
+@keyframes profPic {
+    0% {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@keyframes aboutText {
+    0% {
+        opacity: 0%;
+    }
+}

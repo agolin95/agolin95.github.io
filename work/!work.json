@@ -1,0 +1,105 @@
+[
+    {
+        "title": "RedHat's Ansible Galaxy",
+        "date": "May 2017",
+        "summary": "Human factors and computer science capstone, a full redesign of RedHat's Ansible Galaxy.",
+        "file": "redhat.pdf"  
+    },
+    {
+        "title": "EHang",
+        "date": "March 2017",
+        "summary": "Interface design for helicopter ridesharing service.",
+        "file": "ehang.pdf"  
+    },
+    {
+        "title": "JustoCat",
+        "date": "Feb 2017",
+        "summary": "Interface design for assistive geriatric tech companion application.",
+        "file": "justocat.pdf"  
+    },
+    {
+        "title": "Yamaha Analysis",
+        "date": "Feb 2017",
+        "summary": "Design analysis for Yamaha's piano website.",
+        "file": "yamaha.pdf"  
+    },
+    {
+        "title": "HeadphoneHunter",
+        "date": "Feb 2017",
+        "summary": "Interface design for headphone selection tool.",
+        "file": "headphonehunter.pdf"  
+    },
+    {
+        "title": "Starbucks' Barista",
+        "date": "Jan 2017",
+        "summary": "Interface design for Starbucks' speculative ordering kiosk.",
+        "file": "starbucks.pdf"  
+    },
+    {
+        "title": "Apportech Gardening Tool",
+        "date": "May 2016",
+        "summary": "Product research and design for multi-functional gardening tool for Tufts' product design course capstone.",
+        "file": "apportech.pdf"  
+    },
+    {
+        "title": "BandMate",
+        "date": "Feb 2016",
+        "summary": "Product research and design for band mate matching mobile application.",
+        "file": "bandmate.pdf"
+    },
+    {
+        "title": "BandCamp Analysis",
+        "date": "Feb 2016",
+        "summary": "Design analysis of BandCamp's desktop website.",
+        "file": "bandcamp.pdf"
+    },
+    {
+        "title": "Neuromarketing Lesson",
+        "date": "Feb 2016",
+        "summary": "Lesson plan about neuromarketing for Tufts' advanced engineering psychology course.",
+        "file": "neuromarketing.pdf"
+    },
+    {
+        "title": "MilkCrate",
+        "date": "Dec 2015",
+        "summary": "Product design for experimental music library mobile application.",
+        "file": "milkcrate.pdf"
+    },
+    {
+        "title": "The Vinyl Revival",
+        "date": "May 2015",
+        "summary": "Research paper exploring the possible causes for the recent surge in the popularity of vinyl records.",
+        "file": "vinylpaper.pdf"
+    },
+    {
+        "title": "StrumBuddy",
+        "date": "May 2015",
+        "summary": "Product mockup of assistive tool for guitarists with impaired dexterity.",
+        "file": "strumbuddy.pdf"
+    },
+    {
+        "title": "Turntable CAD",
+        "date": "April 2015",
+        "summary": "CAD mockup of the Orbit turntable using SketchUp.",
+        "file": "turntable.jpg"
+    },
+    {
+        "title": "This Song Takes Me Back",
+        "date": "May 2014",
+        "summary": "Research paper exploring the effects of music therapy on Alzheimer's patients.",
+        "file": "musictherapy.pdf"
+    },
+    {
+        "title": "VBA Music Trainer",
+        "date": "May 2014",
+        "summary": "Interactive music theory training program written in VBA using Microsoft Office's UI capabilities.",
+        "file": "vba.pdf"
+    },
+    {
+        "title": "Breadboard Synth",
+        "date": "May 2014",
+        "summary": "Functional synthesizer built on a breadboard and run through a custom MATLAB program.",
+        "file": "synth.png"
+    }
+    
+]

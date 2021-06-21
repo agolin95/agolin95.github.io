@@ -1,141 +1,34 @@
-pyrtho<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Alexander Golin</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Alexander Golin">
-    <meta name="author"      content="Alexander Golin">
-    <meta name="viewport"    content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
-</head>
-
-<body>
-<div id="mainContent">
-    <div id="header">
-        <h1 id="siteTitle">Alexander Golin</h1>
-        <h4 class="menuItem" id="about" data-section="aboutSection">About</h4>
-        <h4 class="menuItem" id="projects" data-section="portfolioSection">Projects</h4>
-        <h4 class="menuItem" id="art" data-section="artSection">Art</h4>
-    </div>
-
-    <div class="contentSection" id="aboutSection">
-        <img class="taglineImg" src="img/horns.png"/>
-        <img class="taglineImg" src="img/brain.png"/>
-        <img class="taglineImg" src="img/circuit.png"/>
-        <h2  class="tagline">I Love Music & Psychology & Technology</h2>
-        <div class="hline"></div>
-        <div class="aboutText">
-            <h3>I’m a passionate musician, a die-hard city boy, an avid proponent of user-centric design, and an empathetic humanist, sometimes to a fault. </h3>
-
-            <h3>Seeking to hybridize my education, I double majored in Human Factors Engineering and Computer Science at Tufts University, and graduated Magna Cum Laude in the Spring of 2017.  I spent my college years as a leader in the Radio Broadcasting and DIY Concert Booking communities. I am currently working as a Scrum Master at Pegasystems in Cambridge, MA.
-            </h3>
-
-            <h3>One day I want to professionally merge my three passions and change the landscape of the music industry to more potently engage consumers while providing more equitable compensation for artists.
-            </h3>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Alexander Golin</title>
+        <meta name="description" content="Alexander Golin">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/global.css">
+        <link rel="stylesheet" href="/css/mobile.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="splash" class="container">
+            <h1>ALEXANDER GOLIN</h1>
+            <div class=profile></div>
+            <div class="aboutText">
+                <p>I’m a passionate musician, an equally die-hard city-boy and woods-dweller, an avid proponent of user-centric design, and an empathetic humanist, sometimes to a fault. </p> 
+                <p>Seeking to hybridize my education, I double majored in Human Factors Engineering and Computer Science at Tufts University, focusing in UX design. I spent my college years as a leader in the Radio Broadcasting and DIY Concert Booking communities, where I discovered a deep passion for organizing artistic communities. I graduated Magna Cum Laude in the Spring of 2017.</p>
+                <p>After graduation, I worked as a software engineer on the data visualization team at Pegasystems in Cambridge, MA. I quickly leaned into my love for helping people and began serving as a scrum master, a post I held for several years. </p>
+                <p>After nearly a decade in Boston, I followed my heart home to NYC and, just as the pandemic struck, I began serving as technical program manager for MongoDB's driver teams. I help oversee the all the goings on of the drivers department and seek any opportunity to infuse my love of design and development into my day to day management work.</p>
+                <p>I'd like to one day combine my passions for music, people, and technology to promote equitable compensation for independent artists and stronger community engagement for listeners and artists alike.</p>
+            </div>
         </div>
-    </div>
 
-    <div class="contentSection" id="portfolioSection">
-        <h2  class="tagline">Academic & Professional Projects</h2>
-        <div class="portfolioSelector" id="musicSelector" data-selector="music">
-            <img class="portfolioSelectorImg" src="img/horns.png"/>
-            <h5 class="portfolioSelectorTitle">Music</h5>
-        </div>
-        <div class="portfolioSelector" id="psychSelector" data-selector="psych">
-            <img class="portfolioSelectorImg" src="img/brain.png"/>
-            <h5 class="portfolioSelectorTitle">Psychology</h5>
-        </div>
-        <div class="portfolioSelector" id="techSelector"  data-selector="tech">
-            <img class="portfolioSelectorImg" src="img/circuit.png"/>
-            <h5 class="portfolioSelectorTitle">Technology</h5>
-        </div>
-        <div class="hline"></div>
-        <div class="workList" id="portfolioList16"><h2>2016</h2></div>
-        <div class="workList" id="portfolioList15"><h2>2015</h2></div>
-        <div class="workList" id="portfolioList14"><h2>2014</h2></div>
-        <div class="workList" id="portfolioList13"><h2>2013</h2></div>
-    </div>
-
-    <div class="contentSection" id="artSection">
-        <audio id="myMusicPlayer"><source src="" type="audio/mpeg"></audio>
-        <h2 class="tagline">Music</h2>
-        <div id="playButton"></div>
-        <h3 class="subTagline">Covers of some of my favorite songs</h3>
-        <!-- <div id="musicList">
-
-            <div class="musicItem">
-                <img id="duds" class="musicItemImg" src="img/duds.png"/>
-                <h5 class="musicItemTitle">Milk Duds</h5>
-            </div>
-
-            <div class="musicItem">
-                <img id="hazleton" class="musicItemImg" src="img/hazleton.png"/>
-                <h5 class="musicItemTitle">Hazleton</h5>
-            </div>
-            <div class="musicItem">
-                <img id="hotelier" class="musicItemImg" src="img/hotelier.png"/>
-                <h5 class="musicItemTitle">Your Deep Rest</h5>
-            </div>
-            <div class="musicItem">
-                <img id="killinme" class="musicItemImg" src="img/killinme.png"/>
-                <h5 class="musicItemTitle">Yer Killin' Me</h5>
-            </div>
-            <div class="musicItem">
-                <img id="morethanlife" class="musicItemImg" src="img/morethanlife.png"/>
-                <h5 class="musicItemTitle">More Than Life</h5>
-            </div>
-            <div class="musicItem">
-                <img id="nintendo" class="musicItemImg" src="img/nintendo.png"/>
-                <h5 class="musicItemTitle">Nintendo 64</h5>
-            </div>
-            <div class="musicItem">
-                <img id="oldgray" class="musicItemImg" src="img/oldgray.png"/>
-                <h5 class="musicItemTitle">The Artist</h5>
-            </div>
-            <div class="musicItem">
-                <img id="separation" class="musicItemImg" src="img/separation.png"/>
-                <h5 class="musicItemTitle">Separations</h5>
-            </div>
-            <div class="musicItem">
-                <img id="typeo" class="musicItemImg" src="img/typeo.png"/>
-                <h5 class="musicItemTitle">I Don't Wanna Be Me</h5>
-            </div>
-        </div> -->
-        <div class="workList" id="musicList"></div>
-        <div class="hline"></div>
-        <h2 class="tagline">Creative Writing</h2>
-        <div class="workList" id="writingList"></div>
-    </div>
-
-    <div id="hoverOver">
-      <h3 id="hoverOverTitle">Title</h3>
-      <!-- <img src="" id="hoverOverPic"> -->
-      <p id="hoverOverContent">lorem</p>
-    </div>
-    <div id="myModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title" id="modalTitle">Modal Header</h4>
-          </div>
-          <div class="modal-body">
-          <img id="modalPic" src="">
-            <p id="modalContent"></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-</div>
-</body>
+        <nav id="nav"></nav>
+        <footer id="footer"></footer>        
+        <script src="/js/main.js" async defer></script>
+    </body>
 </html>
