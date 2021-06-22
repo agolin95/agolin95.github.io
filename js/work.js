@@ -19,7 +19,7 @@ $(function() {
                 html = `<iframe src="http://docs.google.com/gview?url=${fullpath}&embedded=true" frameborder="0"></iframe>`
                 // html = `<embed src="${fullpath}"/>`;
             } else if (type == "png" || type == "jpg") {
-                html = `<img src="${fullpath}"/>`
+                html = `<div class="img" style="background-image: url(${fullpath})"></div>`
             }
             $(".overlay").empty();
             $(".overlay").append(html);
