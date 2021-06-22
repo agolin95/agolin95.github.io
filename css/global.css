@@ -174,13 +174,12 @@ a:hover {
     display: none;
 }
 
-.overlay iframe, .overlay .img {
+.overlay object, .overlay embed, .overlay iframe, .overlay .img {
     margin: auto;
-    margin-top: calc(var(--nav-height) + 20px);
-    margin-bottom: calc(var(--foot-height) + 20px);
+    margin-top: 70px;
     width: 90vw;
     max-width: 1000px;
-    height: calc(100vh - ((var(--nav-height) + 20px) + (var(--foot-height) + 20px)));
+    height: calc(100vh - 120px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

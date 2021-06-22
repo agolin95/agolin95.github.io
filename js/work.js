@@ -16,7 +16,13 @@ $(function() {
             let type = file.split(".")[1];
             let html = "";
             if (type == "pdf") {
-                html = `<iframe src="http://docs.google.com/gview?url=${fullpath}&embedded=true" frameborder="0"></iframe>`
+                html = `<object data="${fullpath}" type="application/pdf">
+                    <p>Your web browser doesn't have a PDF plugin.
+                    Instead you can <a href="${fullpath}">click here to
+                    download the PDF file.</a></p>
+                </object>`
+                // html = `<object data="http://docs.google.com/gview?url=${fullpath}&embedded=true"></object>`
+                // html = `<iframe src="http://docs.google.com/gview?url=${fullpath}&embedded=true" frameborder="0"></iframe>`
                 // html = `<embed src="${fullpath}"/>`;
             } else if (type == "png" || type == "jpg") {
                 html = `<div class="img" style="background-image: url(${fullpath})"></div>`
