@@ -2,7 +2,7 @@
     {
         "title": "RedHat's Ansible Galaxy",
         "date": "May 2017",
-        "summary": "Human factors and computer science capstone, a full redesign of RedHat's Ansible Galaxy.",
+        "summary": "Senior capstone, a full redesign of RedHat's Ansible Galaxy.",
         "file": "redhat.pdf"  
     },
     {
@@ -38,7 +38,7 @@
     {
         "title": "Apportech Gardening Tool",
         "date": "May 2016",
-        "summary": "Product research and design for multi-functional gardening tool for Tufts' product design course capstone.",
+        "summary": "Course capstone, product research and design for novel gardening tool.",
         "file": "apportech.pdf"  
     },
     {
@@ -56,7 +56,7 @@
     {
         "title": "Neuromarketing Lesson",
         "date": "Feb 2016",
-        "summary": "Lesson plan about neuromarketing for Tufts' advanced engineering psychology course.",
+        "summary": "Lesson plan about neuromarketing for advanced Tufts seminar.",
         "file": "neuromarketing.pdf"
     },
     {
@@ -68,8 +68,8 @@
     {
         "title": "The Vinyl Revival",
         "date": "May 2015",
-        "summary": "Research paper exploring the possible causes for the recent surge in the popularity of vinyl records.",
-        "file": "vinylpaper.pdf"
+        "summary": "Research paper exploring the recent surge in popularity of vinyl records.",
+        "file": "vinyl.pdf"
     },
     {
         "title": "StrumBuddy",
@@ -81,7 +81,7 @@
         "title": "Turntable CAD",
         "date": "April 2015",
         "summary": "CAD mockup of the Orbit turntable using SketchUp.",
-        "file": "turntable.jpg"
+        "file": "turntable.png"
     },
     {
         "title": "This Song Takes Me Back",
