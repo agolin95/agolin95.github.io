@@ -162,9 +162,6 @@ a:hover {
 }
 
 
-.hidden {
-    display: none;
-}
 
 
 #backButton {
@@ -183,7 +180,11 @@ a:hover {
 
 #backButton p {
     align-self: center;
-    margin-top: -3px;
+    margin-top: -2px;
+}
+
+.hidden {
+    display: none!important;
 }
 
 #doc {
