@@ -115,12 +115,12 @@ a:hover {
 
 .workItem {
     display: inline-block;
-    width: clamp(200px, 20vw, 500px);
-    height: clamp(120px, 12vw, 300px);
+    width: clamp(150px, 20vw, 500px);
+    height: clamp(100px, 12vw, 300px);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    margin-left: 10px;
+    margin-left: clamp(5px, 1vw, 10px);
     margin-right: 10px;
     vertical-align: top;
     background-position: center;
@@ -170,10 +170,20 @@ a:hover {
 #backButton {
     width: 50px;
     height: 50px;
-    background: red;
+    background: var(--black);
     position: fixed;
     top: 80px;
     left: 15vw;
+    border-radius: 100%;
+    border: solid white 2px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#backButton p {
+    align-self: center;
+    margin-top: -3px;
 }
 
 #doc {
