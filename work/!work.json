@@ -3,103 +3,103 @@
         "title": "RedHat's Ansible Galaxy",
         "date": "May 2017",
         "summary": "Senior capstone, a full redesign of RedHat's Ansible Galaxy.",
-        "file": "redhat.pdf"  
+        "file": "redhat.html"  
     },
     {
         "title": "EHang",
         "date": "March 2017",
         "summary": "Interface design for helicopter ridesharing service.",
-        "file": "ehang.pdf"  
+        "file": "ehang.html"  
     },
     {
         "title": "JustoCat",
         "date": "Feb 2017",
         "summary": "Interface design for assistive geriatric tech companion application.",
-        "file": "justocat.pdf"  
+        "file": "justocat.html"  
     },
     {
         "title": "Yamaha Analysis",
         "date": "Feb 2017",
         "summary": "Design analysis for Yamaha's piano website.",
-        "file": "yamaha.pdf"  
+        "file": "yamaha.html"  
     },
     {
         "title": "HeadphoneHunter",
         "date": "Feb 2017",
         "summary": "Interface design for headphone selection tool.",
-        "file": "headphonehunter.pdf"  
+        "file": "headphonehunter.html"  
     },
     {
         "title": "Starbucks' Barista",
         "date": "Jan 2017",
         "summary": "Interface design for Starbucks' speculative ordering kiosk.",
-        "file": "starbucks.pdf"  
+        "file": "starbucks.html"  
     },
     {
         "title": "Apportech Gardening Tool",
         "date": "May 2016",
         "summary": "Course capstone, product research and design for novel gardening tool.",
-        "file": "apportech.pdf"  
+        "file": "apportech.html"  
     },
     {
         "title": "BandMate",
         "date": "Feb 2016",
         "summary": "Product research and design for band mate matching mobile application.",
-        "file": "bandmate.pdf"
+        "file": "bandmate.html"
     },
     {
         "title": "BandCamp Analysis",
         "date": "Feb 2016",
         "summary": "Design analysis of BandCamp's desktop website.",
-        "file": "bandcamp.pdf"
+        "file": "bandcamp.html"
     },
     {
         "title": "Neuromarketing Lesson",
         "date": "Feb 2016",
         "summary": "Lesson plan about neuromarketing for advanced Tufts seminar.",
-        "file": "neuromarketing.pdf"
+        "file": "neuromarketing.html"
     },
     {
-        "title": "MilkCrate",
+        "title": "No More Milk Crates: The Importance of Music Library Design in the Digital Age",
         "date": "Dec 2015",
         "summary": "Product design for experimental music library mobile application.",
-        "file": "milkcrate.pdf"
+        "file": "milkcrate.html"
     },
     {
         "title": "The Vinyl Revival",
         "date": "May 2015",
         "summary": "Research paper exploring the recent surge in popularity of vinyl records.",
-        "file": "vinyl.pdf"
+        "file": "vinyl.html"
     },
     {
         "title": "StrumBuddy",
         "date": "May 2015",
         "summary": "Product mockup of assistive tool for guitarists with impaired dexterity.",
-        "file": "strumbuddy.pdf"
+        "file": "strumbuddy.html"
     },
     {
         "title": "Turntable CAD",
         "date": "April 2015",
         "summary": "CAD mockup of the Orbit turntable using SketchUp.",
-        "file": "turntable.png"
+        "file": "turntable.html"
     },
     {
         "title": "This Song Takes Me Back",
         "date": "May 2014",
         "summary": "Research paper exploring the effects of music therapy on Alzheimer's patients.",
-        "file": "musictherapy.pdf"
+        "file": "musictherapy.html"
     },
     {
-        "title": "VBA Music Trainer",
+        "title": "Music Theory Trainer",
         "date": "May 2014",
-        "summary": "Interactive music theory training program written in VBA using Microsoft Office's UI capabilities.",
-        "file": "vba.pdf"
+        "summary": "Interactive music theory training program written in VBA using Microsoft Office's UI capabilities. I completed this project for my freshman year musical instrument engineering course. We made the circuit diagram and build from scratch and wrote a corresponding MATLAB program to process the user input and play back a 12 tone scale.",
+        "file": "vba.html"
     },
     {
         "title": "Breadboard Synth",
         "date": "May 2014",
         "summary": "Functional synthesizer built on a breadboard and run through a custom MATLAB program.",
-        "file": "synth.png"
+        "file": "synth.html"
     }
     
 ]

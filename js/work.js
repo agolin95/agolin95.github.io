@@ -12,38 +12,55 @@ $(function() {
         makeTrackElems(json);
         $(".workItem").click(function() {
             let file = $(this).data("file");
-            let fullpath = "https://alexandergolin.com/work/" + file;
-            let type = file.split(".")[1];
-            let html = "";
-            if (type == "pdf") {
-                html = `<object data="${fullpath}" type="application/pdf">
-                    <p>Your web browser doesn't have a PDF plugin.
-                    Instead you can <a href="${fullpath}">click here to
-                    download the PDF file.</a></p>
-                </object>`
-                // html = `<object data="http://docs.google.com/gview?url=${fullpath}&embedded=true"></object>`
-                // html = `<iframe src="http://docs.google.com/gview?url=${fullpath}&embedded=true" frameborder="0"></iframe>`
-                // html = `<embed src="${fullpath}"/>`;
-            } else if (type == "png" || type == "jpg") {
-                html = `<div class="img" style="background-image: url(${fullpath})"></div>`
-            }
-            $(".overlay").empty();
-            $(".overlay").append(html);
-            $(".overlay").removeClass("hidden");
-        });
+            let fullpath = "/work/" + file;
+            let title = $(this).data("title");
+            let date = $(this).data("date");
+            let summary = $(this).data("summary");
+            $("#docContent").load("/work/" + file);
+            $("#title").text(title);
+            $("#date").text(date);
+            $("#summary").text(summary);
 
-        $(".overlay").click(function() {
-            $(".overlay").addClass("hidden");
+            $("#workItems").addClass("hidden");
+            $("#doc").removeClass("hidden");
+            $("#backButton").removeClass("hidden");
+            scrollToTop();
+            // let url = "https://alexandergolin.com/work/" + file;
+            // let type = file.split(".")[1];
+            // let html = "";
+            // $(".overlay").empty();
+            // if (type == "pdf") {
+            //     html = `<object data="${fullpath}" type="application/pdf">
+            //         <p>Your web browser doesn't have a PDF plugin.
+            //         Instead you can <a href="${fullpath}">click here to
+            //         download the PDF file.</a></p>
+            //     </object>`
+            //     // html = `<object data="http://docs.google.com/gview?url=${fullpath}&embedded=true"></object>`
+            //     // html = `<iframe src="http://docs.google.com/gview?url=${fullpath}&embedded=true" frameborder="0"></iframe>`
+            //     // html = `<embed src="${fullpath}"/>`;
+            //     $(".overlay").append(html);
+            // } else if (type == "png" || type == "jpg") {
+            //     html = `<div class="img" style="background-image: url(${fullpath})"></div>`
+            //     $(".overlay").append(html);
+            // } else if (type == "html") {
+            //     $(".overlay").load("/work/" + file);
+            // }
+            // $(".overlay").removeClass("hidden");
         });
     });
-
+    $("#backButton").click(function() {
+        $("#backButton").addClass("hidden");
+        $("#doc").addClass("hidden");
+        $("#workItems").removeClass("hidden");
+        scrollToTop();
+    });
 });
 
 
 function makeTrackElems(json) {
     for (let i in json) {
         let html = 
-            `<div class="workItem" data-file="${json[i].file}" style="background-image: url(/work/${json[i].file.split('.')[0]}.png)">
+            `<div class="workItem" data-file="${json[i].file}" data-title="${json[i].title}" data-date="${json[i].date}" data-summary="${json[i].summary}"style="background-image: url(/work/${json[i].file.split('.')[0]}.png)">
                 <h3 class="workTitle">${json[i].title}</h3>
                 <h4 class="workDate">${json[i].date}</h4>
                 <p class="workSummary">${json[i].summary}</p>
@@ -51,3 +68,8 @@ function makeTrackElems(json) {
         $('#workItems').append(html);
     }
 }
+
+function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  } 

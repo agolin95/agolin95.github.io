@@ -77,8 +77,8 @@ a:hover {
 }
 
 #splash .profile {
-    width: clamp(100px, 20vw, 250px);
-    height: clamp(100px, 20vw, 250px);
+    width: clamp(150px, 20vw, 250px);
+    height: clamp(150px, 20vw, 250px);
     margin-left: auto;
     margin-right: auto;
     border-radius: 100%;
@@ -97,15 +97,16 @@ a:hover {
 .aboutText {
     width: clamp(300px, 80vw, 700px);
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 50px;
     line-height: 25px;
-    text-align: justify;
+    text-align: left;
     opacity: 100%;
     animation-name: fadeIn;
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
+    text-indent: 30px;
 }
 
 .aboutText p {
@@ -160,29 +161,111 @@ a:hover {
     line-height: 25px;
 }
 
-.overlay {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.9);
-    z-index: 1000;
-    top: 0;
-    text-align: center;
-}
 
-.overlay.hidden {
+.hidden {
     display: none;
 }
 
-.overlay object, .overlay embed, .overlay iframe, .overlay .img {
+
+#backButton {
+    width: 50px;
+    height: 50px;
+    background: red;
+    position: fixed;
+    top: 80px;
+    left: 15vw;
+}
+
+#doc {
+    opacity: 100%;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    text-indent: 30px;
+    text-align: left;
+    border: solid var(--white) 2px;
+    border-radius: 10px;
+    width: clamp(300px, 85vw, 1000px);
+    padding: clamp(10px, 5vw, 50px);
     margin: auto;
-    margin-top: 70px;
-    width: 90vw;
-    max-width: 1000px;
-    height: calc(100vh - 120px);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: var(--white);
+    color: var(--black);
+    margin-bottom: 50px;
+}
+
+#doc a {
+    color: var(--black);
+}
+
+#doc .noIndent {
+    text-indent: 0px;
+}
+
+#doc p {
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+#doc img, .imageLink {
+    width: clamp(200px, 30vw, 600px);
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px 0px #aaa; */
+    margin-bottom: 20px;
+}
+
+#doc #title {
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 30px;
+    text-indent: 0px;
+}
+
+#doc #date {
+    font-size: 12px;
+    text-align: center;
+    text-indent: 0px;
+    margin-top: -10px;
+}
+
+#doc #summary {
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 50px;
+}
+
+#doc .break {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    text-indent: 0px;
+}
+
+#doc .citation {
+    font-size: 10px;
+    text-align: center;
+    text-indent: 0px;
+    margin-top: -15px;
+}
+
+#doc .footnote {
+    font-size: 10px;
+    vertical-align: super;
+}
+
+
+#doc .section, #doc .section-head {
+    text-indent: 0px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+#doc .section-head {
+    text-align: center;
 }
 
 #resume .imgWrap {
@@ -201,17 +284,14 @@ a:hover {
 }  
 
 
-#footer {
-    position: fixed;
-    bottom: 0;
-    z-index: 1000;
+.social {
     width: 100vw;
     text-align: center;
-    height: var(--foot-height);
+    margin-top: 20px;
 }
 
-#footer img {
-    width: 20px;
+.social img {
+    width: 30px;
     margin-left: clamp(10px, 2vw, 20px);
     margin-right: clamp(10px, 2vw, 20px);
 }
