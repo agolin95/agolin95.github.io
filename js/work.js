@@ -61,9 +61,10 @@ function makeTrackElems(json) {
     for (let i in json) {
         let html = 
             `<div class="workItem" data-file="${json[i].file}" data-title="${json[i].title}" data-date="${json[i].date}" data-summary="${json[i].summary}"style="background-image: url(/work/${json[i].file.split('.')[0]}.png)">
-                <h3 class="workTitle">${json[i].title}</h3>
-                <h4 class="workDate">${json[i].date}</h4>
-                <p class="workSummary">${json[i].summary}</p>
+                <div class="textWrap">
+                    <p class="workTitle">${json[i].title}</h3>
+                    <p class="workDate">${json[i].date}</h4>
+                </div>
             </div>`
         $('#workItems').append(html);
     }

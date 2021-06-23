@@ -114,14 +114,13 @@ a:hover {
 }
 
 .workItem {
-    display: inline-block;
-    width: clamp(150px, 20vw, 500px);
-    height: clamp(100px, 12vw, 300px);
-    padding: 20px;
+    display: inline-flex;
+    width: clamp(125px, 20vw, 500px);
+    height: clamp(75px, 12vw, 300px);
     border-radius: 10px;
     margin-bottom: 20px;
-    margin-left: clamp(5px, 1vw, 10px);
-    margin-right: 10px;
+    margin-left: clamp(3px, 2vw, 10px);
+    margin-left: clamp(3px, 2vw, 10px);
     vertical-align: top;
     background-position: center;
     background-size: cover;
@@ -130,6 +129,9 @@ a:hover {
     -webkit-transition: opacity 300ms ease;
     -ms-transition: opacity 300ms ease;
     transition: opacity 300ms ease;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .workItem:hover {
@@ -140,27 +142,21 @@ a:hover {
     transition: opacity 300ms ease;
 }
 
-.workTitle, .workDate {
+.workItem p {
     background-color: black;
-    font-size: 20px;
+    font-size: clamp(14px, 2vw, 20px);
     padding: 5px;
     width: -moz-fit-content;
     width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: auto;
 }
 
-.workDate {
-    font-size: 12px;
+.workItem .workDate {
+    font-size: 10px;
     margin-top: 5px;
 }
-
-.workSummary {
-    display: none;
-    margin-top: 10px;
-    line-height: 25px;
-}
-
 
 
 
