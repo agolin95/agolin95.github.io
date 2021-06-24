@@ -122,8 +122,8 @@ a:hover {
 
 .workItem {
     display: inline-flex;
-    width: clamp(100px, 20vw, 300px);
-    height: clamp(80px, 12vw, 200px);
+    width: clamp(100px, 30vw, 300px);
+    height: clamp(80px, 20vw, 200px);
     border-radius: 10px;
     margin-bottom: clamp(3px, 2vw, 10px);
     margin-left: clamp(3px, 2vw, 10px);
