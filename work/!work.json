@@ -48,9 +48,9 @@
         "file": "bandmate.html"
     },
     {
-        "title": "BandCamp Analysis",
+        "title": "Bandcamp Analysis",
         "date": "Feb 2016",
-        "summary": "Design analysis of BandCamp's desktop website.",
+        "summary": "Design analysis of Bandcamp's desktop website.",
         "file": "bandcamp.html"
     },
     {
@@ -60,7 +60,8 @@
         "file": "neuromarketing.html"
     },
     {
-        "title": "No More Milk Crates: The Importance of Music Library Design in the Digital Age",
+        "title": "MilkCrate",
+        "longTitle": "No More Milk Crates: The Importance of Music Library Design in the Digital Age",
         "date": "Dec 2015",
         "summary": "Product design for experimental music library mobile application.",
         "file": "milkcrate.html"
