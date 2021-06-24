@@ -165,7 +165,7 @@ a:hover {
 
 .workItem p {
     font-weight: 800;
-    color: var(--black);
+    color: black;
     font-size: clamp(14px, 1.5vw, 50px);
     padding: 5px;
     width: -moz-fit-content;
