@@ -122,10 +122,10 @@ a:hover {
 
 .workItem {
     display: inline-flex;
-    width: clamp(125px, 20vw, 500px);
-    height: clamp(75px, 12vw, 300px);
+    width: clamp(100px, 20vw, 300px);
+    height: clamp(80px, 12vw, 200px);
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: clamp(3px, 2vw, 10px);
     margin-left: clamp(3px, 2vw, 10px);
     margin-left: clamp(3px, 2vw, 10px);
     vertical-align: top;
@@ -164,10 +164,10 @@ a:hover {
 }
 
 .workItem p {
+    padding: 2px;
     font-weight: 800;
     color: black;
-    font-size: clamp(14px, 1.5vw, 50px);
-    padding: 5px;
+    font-size: clamp(12px, 1.5vw, 50px);
     width: -moz-fit-content;
     width: fit-content;
     height: -moz-fit-content;
@@ -327,9 +327,10 @@ a:hover {
 
 
 #resume .imgWrap {
-    width: clamp(300px, 80vw, 1000px);
+    width: clamp(300px, 80vw, 500px);
     margin: auto;
     margin-bottom: 10px;
+    display: inline-block;
 } 
 
 #resume .imgWrap img {
