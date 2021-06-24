@@ -5,9 +5,15 @@
         "file": "collective.html"
     },
     {
-        "title": "Pegasystems Internal Dashboards",
+        "title": "MongoDB's Internal Wiki",
+        "date": "2020 - Present",
+        "summary": "While serving as technical program manager for MongoDB's driver teams, I helped lead the charge to redesign our Confluence wiki to promote better UX and information accessibility.",
+        "file": "wiki.html"
+    },
+    {
+        "title": "Pegasystems' Internal Dashboards",
         "date": "2018-2019",
-        "summary": "For several years I helped lead the charge to create data visualizations for internal use with the goal of giving engineering teams insight into their own practices.",
+        "summary": "While serving as an engineer and later a scrum master at Pegasystems, I helped lead the charge to create data visualizations for internal use with the goal of giving engineering teams insight into their own practices.",
         "file": "dashboard.html"
     },
     {
