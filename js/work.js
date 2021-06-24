@@ -16,6 +16,7 @@ $(function() {
             let title = $(this).data("title");
             let date = $(this).data("date");
             let summary = $(this).data("summary");
+            $("#docContent").empty();
             $("#docContent").load("/work/" + file);
             $("#title").text(title);
             $("#date").text(date);
@@ -59,7 +60,7 @@ $(function() {
 
 function makeTrackElems(json) {
     for (let i in json) {
-        let html = 
+        let html =
             `<div class="workItem" data-file="${json[i].file}" data-title="${json[i].title}" data-date="${json[i].date}" data-summary="${json[i].summary}">
                 <div class="background" style="background-image: url(/img/backgrounds/${json[i].file.split('.')[0]}.jpg)"></div>
                 <div class="textWrap">
@@ -74,4 +75,4 @@ function makeTrackElems(json) {
 function scrollToTop() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  } 
+}

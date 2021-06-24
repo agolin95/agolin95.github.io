@@ -1,8 +1,20 @@
 [{
         "title": "COLLECTIVE",
-        "date": "June 2020 - Present (WIP)",
+        "date": "June 2021 - Present (WIP)",
         "summary": "Node app for an artistic collective",
         "file": "collective.html"
+    },
+    {
+        "title": "Pegasystems Internal Dashboards",
+        "date": "2018-2019",
+        "summary": "For several years I helped lead the charge to create data visualizations for internal use with the goal of giving engineering teams insight into their own practices.",
+        "file": "dashboard.html"
+    },
+    {
+        "title": "Dead Rich Artist Site",
+        "date": "June 2017",
+        "summary": "Static site for Cambridge, MA artist Dead Rich",
+        "file": "deadrich.html"
     },
     {
         "title": "RedHat's Ansible Galaxy",

@@ -241,9 +241,8 @@ a:hover {
     text-align: center;
 }
 
-#doc img,
-.imageLink {
-    width: clamp(200px, 30vw, 600px);
+#doc img {
+    width: clamp(200px, 50vw, 500px);
     margin: auto;
     display: inline-block;
     border-radius: 10px;
@@ -293,7 +292,7 @@ a:hover {
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 #doc .footnote {
