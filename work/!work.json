@@ -1,57 +1,68 @@
-[
+[{
+        "title": "COLLECTIVE",
+        "date": "June 2020 - Present (WIP)",
+        "summary": "Node app for an artistic collective",
+        "file": "collective.html"
+    },
     {
         "title": "RedHat's Ansible Galaxy",
         "date": "May 2017",
         "summary": "Senior capstone, a full redesign of RedHat's Ansible Galaxy.",
-        "file": "redhat.html"  
+        "file": "redhat.html"
     },
     {
         "title": "EHang",
         "date": "March 2017",
         "summary": "Interface design for helicopter ridesharing service.",
-        "file": "ehang.html"  
+        "file": "ehang.html"
+    },
+    {
+        "title": "Learning Objective Builder",
+        "date": "Mar 2017",
+        "summary": "Front end tool meant to help teachers develop learning objectives for students. Built for Tufts academic use.",
+        "file": "celt.html"
     },
     {
         "title": "JustoCat",
         "date": "Feb 2017",
         "summary": "Interface design for assistive geriatric tech companion application.",
-        "file": "justocat.html"  
+        "file": "justocat.html"
     },
     {
         "title": "Yamaha Analysis",
         "date": "Feb 2017",
         "summary": "Design analysis for Yamaha's piano website.",
-        "file": "yamaha.html"  
+        "file": "yamaha.html"
     },
     {
         "title": "Headphone Hunter",
         "date": "Feb 2017",
         "summary": "Interface design for headphone selection tool.",
-        "file": "headphonehunter.html"  
+        "file": "headphonehunter.html"
     },
     {
         "title": "Web Audio Mixer",
         "date": "Jan 2017",
         "summary": "Front end mixer built using the WebAudioAPI. Created for use in Tufts' ethnomusicology course.",
-        "file": "mixer.html"  
+        "file": "mixer.html"
     },
     {
         "title": "Starbucks' Barista",
         "date": "Jan 2017",
         "summary": "Interface design for Starbucks' speculative ordering kiosk.",
-        "file": "starbucks.html"  
+        "file": "starbucks.html"
     },
     {
         "title": "Apportech by VFT Design",
         "date": "May 2016",
         "summary": "Course capstone, product research and design for novel gardening tool.",
-        "file": "apportech.html"  
+        "file": "apportech.html"
     },
     {
         "title": "HCI Experiment Applet",
         "date": "April 2016",
         "summary": "Front end tool created to collect data on optimal form elements.",
-        "file": "hci.html"  
+        "file": "hci.html"
     },
     {
         "title": "BandMate",
@@ -114,5 +125,5 @@
         "summary": "Functional synthesizer built on a breadboard and run through a custom MATLAB program.",
         "file": "synth.html"
     }
-    
+
 ]

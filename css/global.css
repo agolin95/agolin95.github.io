@@ -15,11 +15,11 @@ html {
 
 a {
     color: var(--white);
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 a:hover {
-   text-decoration: underline; 
+    text-decoration: underline;
 }
 
 #nav {
@@ -182,8 +182,6 @@ a:hover {
     margin-top: 5px;
 }
 
-
-
 #backButton {
     width: 50px;
     height: 50px;
@@ -243,7 +241,8 @@ a:hover {
     text-align: center;
 }
 
-#doc img, .imageLink {
+#doc img,
+.imageLink {
     width: clamp(200px, 30vw, 600px);
     margin: auto;
     display: inline-block;
@@ -251,7 +250,8 @@ a:hover {
     box-shadow: 0px 0px 10px 0px #aaa;
     margin-bottom: 20px;
     margin-left: 5px;
-    margin-right: 5px;}
+    margin-right: 5px;
+}
 
 #doc #title {
     font-weight: 800;
@@ -301,8 +301,8 @@ a:hover {
     vertical-align: super;
 }
 
-
-#doc .section, #doc .section-head {
+#doc .section,
+#doc .section-head {
     text-indent: 0px;
     font-weight: 800;
     margin-top: 20px;
@@ -326,16 +326,15 @@ a:hover {
 #doc iframe {
     width: 100%;
     height: 60vh;
+    border-radius: 10px;
 }
-
-
 
 #resume .imgWrap {
     width: clamp(300px, 80vw, 500px);
     margin: auto;
     margin-bottom: 10px;
     display: inline-block;
-} 
+}
 
 #resume .imgWrap img {
     width: 100%;
@@ -344,8 +343,7 @@ a:hover {
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
-}  
-
+}
 
 .social {
     width: 100vw;
@@ -358,9 +356,6 @@ a:hover {
     margin-left: clamp(10px, 2vw, 20px);
     margin-right: clamp(10px, 2vw, 20px);
 }
-
-
-
 
 @keyframes profPic {
     0% {
