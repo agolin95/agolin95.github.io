@@ -30,16 +30,28 @@
         "file": "headphonehunter.html"  
     },
     {
+        "title": "Web Audio Mixer",
+        "date": "Jan 2017",
+        "summary": "Front end mixer built using the WebAudioAPI. Created for use in Tufts' ethnomusicology course.",
+        "file": "mixer.html"  
+    },
+    {
         "title": "Starbucks' Barista",
         "date": "Jan 2017",
         "summary": "Interface design for Starbucks' speculative ordering kiosk.",
         "file": "starbucks.html"  
     },
     {
-        "title": "Apportech Gardening Tool",
+        "title": "Apportech by VFT Design",
         "date": "May 2016",
         "summary": "Course capstone, product research and design for novel gardening tool.",
         "file": "apportech.html"  
+    },
+    {
+        "title": "HCI Experiment Applet",
+        "date": "April 2016",
+        "summary": "Front end tool created to collect data on optimal form elements.",
+        "file": "hci.html"  
     },
     {
         "title": "BandMate",
