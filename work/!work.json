@@ -2,158 +2,158 @@
         "title": "COLLECTIVE",
         "date": "June 2021 - Present (WIP)",
         "summary": "This is the current project I'm working on in my spare time for myself and a collection of creative friends and family members. It's a Node app running on Heroku and is very much a work in progress. My hope is to implement authentication and database interactions to allow upload of new material via the UI to promote a better UX for other members of the collective.",
-        "file": "collective.html"
+        "file": "collective"
     },
     {
         "title": "MongoDB",
         "date": "2020 - Present",
         "summary": "Since April of 2020, I've been serving as Technical Program  Manager for MongoDB's driver teams. The majority of my work lies in facilitating meetings and projects amongst my 6 teams spanning 6 language ecosystems (NodeJS, PHP, Python, Ruby, Rust, and Swift). I spend an enormous amount of time working with Jira and think I can safely say I've approached mastery of its query language and custom automation functionality. I've also been working a lot more with GitHub's advanced functionalities than ever before and am becoming better versed in its collaboration and automation capabilities by the day. A project I'm particularly proud of is redesigning the drivers department's Confluence wiki to promote better UX and information accessibility. While Confluence has its quirks, I've really enjoyed the process of delving deepere into understanding all the ways I can abuse the OOTB functionality to maximize my ability to customize the site for an optimal UX.",
-        "file": "mongo.html"
+        "file": "mongo"
     },
     {
         "title": "Pegasystems",
         "date": "2016-2020",
         "summary": "I started working at Pegasystems in Cambridge, MA as a software engineer on the data visualization team in between my junior and senior years at Tufts. After graduating, I joined the team full time and began assisting with a greenfield overhaul of the data visualization engine. After about 8 months with the team full time, I was offered an opportunity to become a scrum master for my neighbor teams and I began a new post. While scrum mastering, I focused the vast majority of my energy on building strong friendships with my teammates while working to eliminate bogged down processes in favor of direct communication and data-driven decision making. Unable to shake my urge to design and develop, I frequently took up pet projects as a scrum master, ranging anywhere between creating dashboards for scrum team self-reflection, establishing an engineering-wide design documentation process, or hosting an open mic in the corporate cafeteria. After several years scrum mastering in Boston, New York City called to me too loudly to ignore and I set off on my next adventure.",
-        "file": "pega.html"
+        "file": "pega"
     },
     {
         "title": "Loop",
         "date": "2019",
         "summary": "In my spare time outside of working as a scrum master at Pegasystems, I helped my close friend with his application idea by designing and prototyping several iterations of the app. The broad goal of the application is to help people focus their time and energy into the people they love - it morphed tremendously over the course of a year and we ended up with several wholly separate iterations of the design, but the ethos has remained constant. After several iterations, we got to conduct some very early user research with peers shortly before I left Boston for New York and the pandemic struck. Since then I've remained in close contact with my friends about this project, but have generally paused my work to focus on the insanity of 2020. I can't show much here at my friend's request, but here's a small preview.",
-        "file": "loop.html"
+        "file": "loop"
     },
     {
         "title": "eshapTV",
         "date": "Aug 2017",
         "summary": "I created this professional landing page for Evan Shapiro, the founder of eshapTV and a close friend. He needed a simple static page to which he could direct clients so I whipped something up with the materials he sent me and hosted it on GitHub pages. A very fun project and I really enjoyed the freelancing experience. This site has since gone out of use, so all that is included is a screenshot of the UI.",
-        "file": "eshap.html"
+        "file": "eshap"
     },
     {
         "title": "Dead Rich",
         "date": "Jun 2017",
         "summary": "I created this for my friend, Dead Rich, while living in Cambridge and beginning to work as a software engineer at Pegasystems after graduating from Tufts. While the site never became fully realized when it came time to subscribe to a domain service, I remain a fan of some of my aggressive design choices on this project and would like to one day take another stab at this knowing what I do now.",
-        "file": "deadrich.html"
+        "file": "deadrich"
     },
     {
         "title": "91.5 WMFO",
         "date": "May 2017",
         "summary": "While serving as the Music Director for 91.5 WMFO Medford at Tufts, I also acted as a stand in Webmaster. The studio had been set up on wordpress, a platform I am not fond of, and I set out to add some WMFO flair to a previously unintentionally Web 2.0 design. I applied a ton of custom CSS and added photos I took from around the station and ultimately ended up with a site I was proud to call ours. Shortly before graduating, I started designing a ground-up version of the site that I unfortunately ran out of time to implement, included below. Since my departure, the WMFO site had a few years without a Webmaster and there have been WordPress integration brekages, so unfortunately my version is no more, though echoes can still be seen.",
-        "file": "wmfo.html"
+        "file": "wmfo"
     },
     {
         "title": "RedHat's Ansible Galaxy",
         "date": "May 2017",
         "summary": "This was my senior capstone project for the Human Factors Engineering major at Tufts, a full redesign of RedHat's Ansible Galaxy. We were partnered with the Ansible team at RedHat and met with them weekly over the course of a year to deliver project updates throughout the design process, start to finish. The document on this page is our final cumulative report which collates every step of our process. This was one of the greatest projects I've ever gotten to work on due to the scale, challenge, and freedom afforded to my close-knit team of friends in the Human Factors and Engineering Psychology majors.",
-        "file": "redhat.html"
+        "file": "redhat"
     },
     {
         "title": "EHang",
         "date": "Mar 2017",
         "summary": "I created this helicopter ride sharing interface for my senior year interface design course at Tufts. This report collates multiple rounds of design and feedback, culminating in the final high fidelity layout. Please forgive the terrible quality of the printing and scanning, I am planning to convert this to HTML.",
-        "file": "ehang.html"
+        "file": "ehang"
     },
     {
         "title": "Learning Objective Builder",
         "date": "Mar 2017",
         "summary": "I developed this academic tool while working for Tufts Technology's AT Fellows program. The RFP requested a tool that walks educators through developing a lesson plan based on Bloom's Taxonomy. This is purely front end and is hosted on GitHub pages. Feel free to try it out in the iframe below.",
-        "file": "celt.html"
+        "file": "celt"
     },
     {
         "title": "JustoCat",
         "date": "Feb 2017",
         "summary": "I created this geriatric assistive tech interface for my senior year Interface Design course at Tufts. The product was a robotic cat created as a therapeutic device for elderly people and the RFP requested a mobile interface for controlling the cat. This was a particularly engaging project because I was able to draw on my experience working in an Alzheimer's unit of an elderly care facility. Please forgive the terrible quality of the printing and scanning, I am planning to convert this to HTML.",
-        "file": "justocat.html"
+        "file": "justocat"
     },
     {
         "title": "Yamaha Analysis",
         "date": "Feb 2017",
         "summary": "I did this website design analysis for my senior year Interface Design course at Tufts. Given free reign to choose the site to focus on, I selected Yamaha's piano website because it served as a good general template for all music gear online stores. This analysis pits Yamaha's site against a number of other leading brands' and breaks down the comparison into quantifiable metrics. Please forgive the terrible quality of the printing and scanning, I am planning to convert this to HTML.",
-        "file": "yamaha.html"
+        "file": "yamaha"
     },
     {
         "title": "Headphone Hunter",
         "date": "Feb 2017",
         "summary": "I created this headphone purchasing interface for my senior year Interface Design course at Tufts. This applet aims to guide users through the process of selecting their ideal headphone via targeted questions and a guided UI experience. Please forgive the terrible quality of the printing and scanning, I am planning to convert this to HTML.",
-        "file": "headphonehunter.html"
+        "file": "headphonehunter"
     },
     {
         "title": "Web Audio Mixer",
         "date": "Jan 2017",
         "summary": "I built this front end mixer built using the Web Audio API while working for Tufts' Technology's AT Fellows program. This tool was requested for the Ethnomusicology course at Tufts so that the class could interactively isolate the different portion of several selected pieces. I've left this untouched since then other than switching the tracks for the first popular stems I could find (apparently 100 Gecs) and a very very quick reskin that still leaves much to be desired. I'd like to return to this and dramatically improve the code and see what kind of fun nonsense I can think up within the Web Audio API.",
-        "file": "mixer.html"
+        "file": "mixer"
     },
     {
         "title": "Starbucks' Barista",
         "date": "Jan 2017",
         "summary": "I created this coffee purchasing interface for my senior year Interface Design course at Tufts. The RFP was for a speculative Starbucks ordering kiosk and we were tasked with coming up with the workflow and design. This was one of the ones I couldn't manage to wedge music into... although if there were a prototype I definitely would have included background music.",
-        "file": "starbucks.html"
+        "file": "starbucks"
     },
     {
         "title": "Apportech Gardening",
         "date": "May 2016",
         "summary": "This is the course capstone for my junior year Human Factors in Product Design course at Tufts. This report outlines my team's entire design process from start to finish. While I can't say I was uniquely compelled by an RFP asking for a novel gardening solution, it turned out to be a great piece of modeling clay to use for my first full-scale product design report. My favorite part about this project was establishing a lasting partnership with a peer in the Engineering Psych program, who I later worked with for our major capstone.",
-        "file": "apportech.html"
+        "file": "apportech"
     },
     {
         "title": "HCI Tool",
         "date": "April 2016",
         "summary": "I created this small front end tool for my junior year HCI course at Tufts. I needed to run an experiment to collect data on which form controls were best for selecting a date, so instead of using a stopwatch I created a small workflow that automatically reported the time spent using each control. It's nothing fancy or exciting, but feel free to take it for a spin in the iframe below.",
-        "file": "hci.html"
+        "file": "hci"
     },
     {
         "title": "BandMate",
         "date": "Feb 2016",
         "summary": "I did this product proposal for my sophomore year Human Factors in Product Design course at Tufts. For this project I had complete free reign to select the product, so I used it as an opportunity to more robustly flesh out an idea I'd been working on at the back of my head. I wanted to create a bandmate matching mobile application to help people meet folks with similar musical taste near them, particularly for college students. This report collates the entire design process culminating in a hi-fi design/prototype and feedback on it.",
-        "file": "bandmate.html"
+        "file": "bandmate"
     },
     {
         "title": "Bandcamp Analysis",
         "date": "Feb 2016",
         "summary": "I did this design analysis of Bandcamp's desktop website for my junior year HCI course at Tufts. We were instructed to conduct a detailed analysis of a website's conceptual model and UX and then provide a few suggestoins. Given the option to choose, I opted to analyze Bandcamp's dekstop website, one I still frequently visit.",
-        "file": "bandcamp.html"
+        "file": "bandcamp"
     },
     {
         "title": "MilkCrate",
         "longTitle": "No More Milk Crates: The Importance of Music Library Design in the Digital Age",
         "date": "Dec 2015",
         "summary": "I did this market review and product mockup for my junior year Engineering Psychology course at Tufts. We were instructed to evaluate a product market and propose an alternative solution, so I selected the music library market. I created the rough outlines of an application called MilkCrate that focused on trying to deliver an experience akin to browsing a vinyl library. I did this project shortly after my paper on the vinyl revival, so it was a topic fresh on my mind. I really enjoyed this project, and it was arguably my earliest in depth UX analysis and proposal.",
-        "file": "milkcrate.html"
+        "file": "milkcrate"
     },
     {
         "title": "The Vinyl Revival",
         "date": "May 2015",
         "summary": "I wrote this research paper for my sophomore year Executive & Managerial Communication course at Tufts. In it, I explore the surge in popularity of vinyl records over the 2010s and provide theories as to why the surge occurred. This one was a real stretch when it comes to shoehorning music into my coursework - fortunately it turns out my professor was secretly an ex-rocker and loved the idea, so a big thank you to her!",
-        "file": "vinyl.html"
+        "file": "vinyl"
     },
     {
         "title": "StrumBuddy",
         "date": "May 2015",
         "summary": "I made this CAD (SketchUp) mockup and product summary for my sophomore year intro to Human Factors Engineering course at Tufts. I chose to create an assistive tool for helping dexterity-impaired guitar players comfortably hold their pick. Any flexibility I had in determining my school projects, I used for focusing on helping musicians.",
-        "file": "strumbuddy.html"
+        "file": "strumbuddy"
     },
     {
         "title": "Turntable CAD",
         "date": "April 2015",
         "summary": "I made this CAD (SketchUp) mockup for my sophomore year intro to Human Factors Engineering course at Tufts. I chose to do a model of the Orbit turntable, seeking any opportunity and excuse to sneak music into my coursework.",
-        "file": "turntable.html"
+        "file": "turntable"
     },
     {
         "title": "This Song Takes Me Back",
         "date": "May 2014",
         "summary": "I wrote this research paper for my freshman year Music Psychology course at Tufts. In this paper I explore the effects of music therapy on Alzheimer's patients. This subject was dear to me because as an early teen, I spent part of my summertime volunteering in the Alzheimer's unit of the elderly care facility in the town I was born in, Allentown, PA. Having such an early opportunity in my college career to explore a topic that meant so much to me scientifically and personally was a fantastic way to start the 4 years.",
-        "file": "musictherapy.html"
+        "file": "musictherapy"
     },
     {
         "title": "Music Theory Trainer",
         "date": "May 2014",
         "summary": "I made this interactive music theory training program for my freshman year intro to electrical engineering programming at Tufts. This is written in VBA using Microsoft Office's UI capabilities (I know, hilarious). I have since lost the code for this, but there were several styles of gameplay, all driven at teaching the user to more rapidly recognize notes, intervals, and chords by sight and sound.",
-        "file": "vba.html"
+        "file": "vba"
     },
     {
         "title": "Breadboard Synth",
         "date": "May 2014",
         "summary": "I made this breadboard synthesizer in my freshman year Music and the Art of Engineering course at Tufts. My (soon-to-be) lifelong best friends and I constructed this by hand and wrote a MATLAB script to process the input into played back sound. It has a chromatic 8 tone 1-octave range, perfect for our class demonstration of playing MGMT's Electric Feel.",
-        "file": "synth.html"
+        "file": "synth"
     }
 
 ]

@@ -1,57 +1,15 @@
 $(function() {
+    //Main
     $.getJSON("/work/!work.json", function(json) {
         makeTrackElems(json);
         $(".workItem").click(function() {
             window.location.hash = $(this).data("file");
         });
-        checkHash(window.location.hash.slice(1));
+        checkHash(window.location.hash);
     });
-
-    $(window).on('hashchange', function(e) {
-        checkHash(window.location.hash.slice(1));
-    });
-
-    $(window).keydown(function(e) {
-        if (e.key == "Escape") {
-            hideDoc();
-            window.location.hash = "";
-        }
-    });
-
 });
 
-function checkHash(hash) {
-    if (hash == "") {
-        hideDoc();
-    } else {
-        showDoc(hash);
-    }
-}
-
-function showDoc(hash) {
-    let item = $(`[data-file='${hash}']`);
-    // clear doc contents
-    $("#docContent").empty();
-
-    // load doc with contents of clicked item
-    $("#docContent").load("/work/" + item.data("file"));
-    $("#title").text(item.data("title"));
-    $("#date").text(item.data("date"));
-    $("#summary").text(item.data("summary"));
-
-    // hide worklist and display doc
-    $("#workItems").addClass("hidden");
-    $("#doc").removeClass("hidden");
-    scrollToTop();
-}
-
-function hideDoc() {
-    $("#doc").addClass("hidden");
-    $("#workItems").removeClass("hidden");
-    scrollToTop();
-}
-
-
+// Helpers
 function makeTrackElems(json) {
     for (let i in json) {
         let html =
@@ -64,9 +22,4 @@ function makeTrackElems(json) {
             </div>`
         $('#workItems').append(html);
     }
-}
-
-function scrollToTop() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }

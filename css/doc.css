@@ -25,7 +25,7 @@
 
 #doc p {
     margin-bottom: 20px;
-    line-height: 20px;
+    line-height: 22px;
     margin: auto;
     max-width: 800px;
     text-indent: 30px;
@@ -74,7 +74,7 @@
     margin: auto;
     margin-bottom: 50px;
     max-width: 500px;
-    text-indent: 0px;
+    line-height: 22px;
 }
 
 #doc .break {

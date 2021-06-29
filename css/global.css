@@ -13,6 +13,7 @@ html {
     font-family: 'Sen', sans-serif;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    word-wrap: break-word;
 }
 
 html::-webkit-scrollbar {
@@ -106,7 +107,7 @@ a:hover {
     margin-top: 10px;
     margin-bottom: 50px;
     line-height: 25px;
-    text-align: left;
+    text-align: justify;
     opacity: 100%;
     animation-name: fadeIn;
     animation-duration: 3s;
@@ -246,6 +247,26 @@ a:hover {
     width: 30px;
     margin-left: clamp(10px, 2vw, 20px);
     margin-right: clamp(10px, 2vw, 20px);
+}
+
+#overlay {
+    height: calc(100vh - 50px);
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    display: flex;
+}
+
+#overlayPic {
+    width: 90vw;
+    height: 90%;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 @keyframes profPic {
