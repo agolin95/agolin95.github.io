@@ -1,61 +1,55 @@
-JSON_FILEPATH = "/work/!work.json";
-// MUSIC_FOLDERPATH = "/swimmingfailure/media/music/mp3/";
-// ART_FOLDERPATH = "/swimmingfailure/media/music/art/";
-// ORIGINALS_DIV = "#originals";
-// COVERS_DIV = "#covers";
-// AUDIO_ELEM = document.getElementById("audio");
-
 $(function() {
-    console.log("WORK");
-
-    $.getJSON(JSON_FILEPATH, function(json) {
+    $.getJSON("/work/!work.json", function(json) {
         makeTrackElems(json);
         $(".workItem").click(function() {
-            let file = $(this).data("file");
-            let fullpath = "/work/" + file;
-            let title = $(this).data("title");
-            let date = $(this).data("date");
-            let summary = $(this).data("summary");
-            $("#docContent").empty();
-            $("#docContent").load("/work/" + file);
-            $("#title").text(title);
-            $("#date").text(date);
-            $("#summary").text(summary);
-
-            $("#workItems").addClass("hidden");
-            $("#doc").removeClass("hidden");
-            $("#backButton").removeClass("hidden");
-            scrollToTop();
-            // let url = "https://alexandergolin.com/work/" + file;
-            // let type = file.split(".")[1];
-            // let html = "";
-            // $(".overlay").empty();
-            // if (type == "pdf") {
-            //     html = `<object data="${fullpath}" type="application/pdf">
-            //         <p>Your web browser doesn't have a PDF plugin.
-            //         Instead you can <a href="${fullpath}">click here to
-            //         download the PDF file.</a></p>
-            //     </object>`
-            //     // html = `<object data="http://docs.google.com/gview?url=${fullpath}&embedded=true"></object>`
-            //     // html = `<iframe src="http://docs.google.com/gview?url=${fullpath}&embedded=true" frameborder="0"></iframe>`
-            //     // html = `<embed src="${fullpath}"/>`;
-            //     $(".overlay").append(html);
-            // } else if (type == "png" || type == "jpg") {
-            //     html = `<div class="img" style="background-image: url(${fullpath})"></div>`
-            //     $(".overlay").append(html);
-            // } else if (type == "html") {
-            //     $(".overlay").load("/work/" + file);
-            // }
-            // $(".overlay").removeClass("hidden");
+            window.location.hash = $(this).data("file");
         });
+        checkHash(window.location.hash.slice(1));
     });
-    $("#backButton").click(function() {
-        $("#backButton").addClass("hidden");
-        $("#doc").addClass("hidden");
-        $("#workItems").removeClass("hidden");
-        scrollToTop();
+
+    $(window).on('hashchange', function(e) {
+        checkHash(window.location.hash.slice(1));
     });
+
+    $(window).keydown(function(e) {
+        if (e.key == "Escape") {
+            hideDoc();
+            window.location.hash = "";
+        }
+    });
+
 });
+
+function checkHash(hash) {
+    if (hash == "") {
+        hideDoc();
+    } else {
+        showDoc(hash);
+    }
+}
+
+function showDoc(hash) {
+    let item = $(`[data-file='${hash}']`);
+    // clear doc contents
+    $("#docContent").empty();
+
+    // load doc with contents of clicked item
+    $("#docContent").load("/work/" + item.data("file"));
+    $("#title").text(item.data("title"));
+    $("#date").text(item.data("date"));
+    $("#summary").text(item.data("summary"));
+
+    // hide worklist and display doc
+    $("#workItems").addClass("hidden");
+    $("#doc").removeClass("hidden");
+    scrollToTop();
+}
+
+function hideDoc() {
+    $("#doc").addClass("hidden");
+    $("#workItems").removeClass("hidden");
+    scrollToTop();
+}
 
 
 function makeTrackElems(json) {
