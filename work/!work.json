@@ -1,6 +1,6 @@
 [{
         "title": "COLLECTIVE",
-        "date": "June 2021 - Present (WIP)",
+        "date": "Current Project",
         "summary": "This is the current project I'm working on in my spare time for myself and a collection of creative friends and family members. It's a Node app running on Heroku and is very much a work in progress. My hope is to implement authentication and database interactions to allow upload of new material via the UI to promote a better UX for other members of the collective.",
         "file": "collective"
     },
@@ -96,7 +96,7 @@
     },
     {
         "title": "HCI Tool",
-        "date": "April 2016",
+        "date": "Apr 2016",
         "summary": "I created this small front end tool for my junior year HCI course at Tufts. I needed to run an experiment to collect data on which form controls were best for selecting a date, so instead of using a stopwatch I created a small workflow that automatically reported the time spent using each control. It's nothing fancy or exciting, but feel free to take it for a spin in the iframe below.",
         "file": "hci"
     },
@@ -133,7 +133,7 @@
     },
     {
         "title": "Turntable CAD",
-        "date": "April 2015",
+        "date": "Apr 2015",
         "summary": "I made this CAD (SketchUp) mockup for my sophomore year intro to Human Factors Engineering course at Tufts. I chose to do a model of the Orbit turntable, seeking any opportunity and excuse to sneak music into my coursework.",
         "file": "turntable"
     },
