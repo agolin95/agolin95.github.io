@@ -129,7 +129,7 @@ a:hover {
 
 #workItems {
     animation-name: fadeIn;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-iteration-count: 1;
     animation-timing-function: ease;
 }
