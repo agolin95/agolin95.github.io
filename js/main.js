@@ -65,8 +65,6 @@ function hideDoc() {
 
 function showDoc(hash) {
     let item = $(`[data-file='${hash}']`);
-    // clear doc contents
-    $("#docContent").empty();
 
     // load doc with contents of clicked item
     $("#docContent").load("/work/" + item.data("file") + ".html");
@@ -79,7 +77,6 @@ function showDoc(hash) {
     $("#doc").removeClass("hidden");
 
     // reset scroll to top
-    scrollToTop();
 }
 
 function scrollToTop() {

@@ -3,6 +3,8 @@ $(function() {
         makeTrackElems(json);
         $(".workItem").click(function() {
             window.location.hash = $(this).data("file");
+            scrollToTop();
+            $("#docContent").empty();
         });
         checkHash(window.location.hash);
     });
