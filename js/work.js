@@ -1,5 +1,4 @@
 $(function() {
-    //Main
     $.getJSON("/work/!work.json", function(json) {
         makeTrackElems(json);
         $(".workItem").click(function() {
@@ -9,7 +8,6 @@ $(function() {
     });
 });
 
-// Helpers
 function makeTrackElems(json) {
     for (let i in json) {
         let html =

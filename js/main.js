@@ -23,7 +23,9 @@ $(function() {
     });
 
     $("#overlay").click(function() {
-        window.history.go(-1)
+        // window.history.go(-1)
+        window.location.hash = window.location.hash.split("$")[0];
+        hideOverlay();
     });
 });
 
