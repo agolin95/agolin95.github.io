@@ -146,7 +146,7 @@
     {
         "title": "Breadboard Synth",
         "date": "May 2014",
-        "summary": "I made this breadboard synthesizer in my freshman year Music and the Art of Engineering course at Tufts. My (soon-to-be) lifelong best friends and I constructed this by hand and wrote a MATLAB script to process the input into played back sound. It has a chromatic 8 tone 1-octave range, perfect for our class demonstration of playing MGMT's Electric Feel.",
+        "summary": "I made this breadboard synthesizer in my freshman year Music and the Art of Engineering course at Tufts. My (soon-to-be) lifelong best friends and I constructed this by hand and wrote a MATLAB script to process the input into played back sound. It has an 8 tone major 1-octave range, perfect for our class demonstration of playing MGMT's Electric Feel.",
         "file": "synth"
     }
 
