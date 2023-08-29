@@ -269,8 +269,8 @@ a:hover {
 
 @keyframes profPic {
     0% {
-        width: 150px;
-        height: 150px;
+        width: clamp(50px, 10vw, 150px);
+        height: clamp(50px, 10vw, 150px);
     }
 }
 
