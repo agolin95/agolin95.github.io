@@ -1,0 +1,13 @@
+[{
+        "title": "COLLECTIVE",
+        "date": "Current Project",
+        "summary": "This is the current project I'm working on in my spare time for myself and a collection of creative friends and family members. It's a Node app running on Heroku and is very much a work in progress. My hope is to implement authentication and database interactions to allow upload of new material via the UI to promote a better UX for other members of the collective.",
+        "file": "collective"
+    },
+    {
+        "title": "Neuromarketing Lesson",
+        "date": "Feb 2016",
+        "summary": "Lesson plan about neuromarketing for advanced Tufts seminar.",
+        "file": "neuromarketing.html"
+    }
+]

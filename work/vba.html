@@ -1,0 +1,40 @@
+<div class="imageWrap">
+    <img class="zoom" src='/work/vba.png'>
+</div>
+<p class="noIndent">Dear President Asimov,</p>
+<p>I am writing to you to submit the flagship iteration of my new program for Microsoft Excel entitled “Ludwig Van VBAthoven: A Music Theory Trainer” which runs on Excel’s VBA code with Excel’s userforms as the user interface as was contracted. I believe
+    you will find everything to your liking.</p>
+<p>As discussed, my program includes three different game modes, all requiring unique methods of coding to achieve. The first type of game is pairing the note name (e.g. A, C#, Bb) to the proper piano key. The second game is pairing the location of a note
+    on staff lines to the corresponding piano key. Lastly, the most complex and challenging game mode asks the user to construct a triad by using toggling piano keys. The triads used in the third game mode are major, minor, augmented, and diminished triads
+    spanning the 12 keys of the Western tonal scale.</p>
+<p>I tried to simplify and streamline the user interface as much as possible. Upon clicking the start button in the home worksheet of the excel file, the main form will be displayed. The user must press the load data button before proceeding, though the
+    quit button is also enabled in case the user decides that he or she does not want to play. After the data is loaded, a message box will verify for the user that the data is ready and the game can begin. The user must select one of the three aforementioned
+    game modes as well as the number of rounds desired, the options being: 10 rounds, 25 rounds, 50 rounds, or Endless Mode. Endless Mode is not technically endless as it allows for 1,000,000 rounds, though I believe this is far greater than the maximum
+    likely number of rounds a user will engage in. When the user presses start, a message box will appear if a game mode or round number has not been selected, but if both have been chosen, the appropriate userform for the selected game mode will load.
+    The three game modes have nearly identical userforms, but their codes are all rather different. On each of these forms the user must press start to enable the piano keys, which will display the first question and increase the round counter by one.
+    In the chord construction form, the submit button must be pressed to check the answer, but in the other two forms simply pressing a key will submit the answer. Upon answer submittal, the round number will increase again and a new question will be
+    displayed. The help button in the bottom left can be clicked for a brief explanation of how to engage with the user interface. There are two counters displayed to the user: the number of correct responses and the number of incorrect responses. The
+    user may quit from these forms at any time or complete the number of rounds they selected. Either of these actions will spur the results userform to load. The user must input their name and press the results button to display the results in the results
+    worksheet. If the user completes zero rounds and presses the quit button then the program will gracefully terminate rather than force the user to display the nonexistent results. </p>
+<p>The target market for this game is rather broad. It is generally intended for those with at least a basic understanding of music theory, and it is really meant more as a practice tool than a teacher. The game does not seek to explain the methodology of
+    chord construction nor staff notation; it seeks to give both budding and experienced musicians a tool to hone their skills and increase the speed at which they can sight read and mentally conceptualize and construct triads. I believe that even seasoned
+    professionals could benefit from this game as a quick and easy means of repetition based practicing. </p>
+<p>Almost all of the code in this project is my own , though I definitely took inspiration from the homework and lab assignments from ES 2. I did not utilize the ES 2 manual, but I did reference my old assignments and manipulated portions of my old code
+    to suit this project, such as the array populating do loops. The only line of code I needed significant inspiration for was the randomization function: x = Int((y - 1 + 1) * Rnd + 1). This was used multiple times to randomize the array subscripts.
+    I found the generic form of a randomization function at http://www.techonthenet.com/excel/formulas/rnd.php and then altered the code to appropriately match the number of items in my arrays. There were a number of challenges that I had to overcome
+    to achieve a simplified and streamlined code. One of the biggest and earliest problems I faced was figuring out how to encode the answers for the chord construction game. With 68 different chords to construct, each with a unique trio of notes (since
+    the keyboard is only one octave) I had to figure out how to combine the three selected notes to match the single answer. After fumbling with combining strings, my roommate (Kristofer Siy, Mathematics Major, Class of 2017) overheard my plight and suggested
+    I utilize prime numbers for the individual key values because the product of any combination of prime numbers will be unique to that combination. I implemented this idea and it worked perfectly. Another challenge I faced was cataloguing and organizing
+    the 102 images of notes in different staff locations on the staff location userform. Simply arranging and uploading images into the userform was time consuming and tiring, and then I faced the arduous task of figuring out the best way of referencing
+    them in my form code. After the unfortunate creation of a 200 line if-then statement I figured I had to find a different approach. I realized that I foolishly overlooked Excel’s object array capabilities, so I set each image as an array object and
+    then randomized the array. I arranged the objects in the array so that the 6 different locations of each of the 12 notes were adjacent in value so that the following if then statements could give simple ranges for the randomized x value which would
+    result in a given answer value corresponding to the key click submission value. </p>
+<p>While I feel confident that this flagship version of “Ludwig Van VBAthoven: A Music Theory Trainer” will meet and hopefully exceed your expectations for a beta program, I think that it could also be expanded in a number of different directions should
+    you be interested. Other game modes could be added in an nonintrusive manner by simply adding a new userform and a new option button on the main page. I was thinking that there could be a relative pitch ear test in which a “home” tone could be played
+    followed by a different tone which the user would then have to identify. This could also be turned into an interval test. Any random two tones could be played in succession and the user would have to determine the interval between the two. In addition,
+    this program could be expanded into different instruments. The most prominent and likely expansion in my mind would be the guitar. This would necessitate a reimagining of the keyboard portion of the userform and this would surely present a fare share
+    of challenges. Because the guitar fretboard is not linear like the piano, I would need to account for different fret positions corresponding to the same note in addition to the multiple octaves present on the fret board. The chord construction would
+    also be difficult as I would need to consider whether it makes sense to allow chord construction across the fretboard in ways that are physically impossible to play despite being theoretically correct and then code the toggle buttons accordingly.
+    </p>
+<p>I hope you find the program to your liking and I look forward to working on it further with you to develop it into a fully marketable product.</p>
+<p class="noIndent">Sincerely,<br> Alexander L. Golin<br> ES 2 Section A<br> Mechanical Engineer<br> Tufts University Class of 2017</p>
