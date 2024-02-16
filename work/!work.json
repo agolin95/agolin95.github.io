@@ -23,12 +23,6 @@
         "file": "eshap"
     },
     {
-        "title": "Dead Rich",
-        "date": "Jun 2017",
-        "summary": "I created this for my friend, Dead Rich, while living in Cambridge and beginning to work as a software engineer at Pegasystems after graduating from Tufts. While the site never became fully realized when it came time to subscribe to a domain service, I remain a fan of some of my aggressive design choices on this project and would like to one day take another stab at this knowing what I do now.",
-        "file": "deadrich"
-    },
-    {
         "title": "91.5 WMFO",
         "date": "May 2017",
         "summary": "While serving as the Music Director for 91.5 WMFO Medford at Tufts, I also acted as a stand in Webmaster. The studio had been set up on wordpress, a platform I am not fond of, and I set out to add some WMFO flair to a previously unintentionally Web 2.0 design. I applied a ton of custom CSS and added photos I took from around the station and ultimately ended up with a site I was proud to call ours. Shortly before graduating, I started designing a ground-up version of the site that I unfortunately ran out of time to implement, included below. Since my departure, the WMFO site had a few years without a Webmaster and there have been WordPress integration brekages, so unfortunately my version is no more, though echoes can still be seen.",
