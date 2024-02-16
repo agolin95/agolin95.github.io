@@ -9,5 +9,11 @@
         "date": "Feb 2016",
         "summary": "Lesson plan about neuromarketing for advanced Tufts seminar.",
         "file": "neuromarketing.html"
+    }, 
+    {
+        "title": "Dead Rich",
+        "date": "Jun 2017",
+        "summary": "I created this for my friend, Dead Rich, while living in Cambridge and beginning to work as a software engineer at Pegasystems after graduating from Tufts. While the site never became fully realized when it came time to subscribe to a domain service, I remain a fan of some of my aggressive design choices on this project and would like to one day take another stab at this knowing what I do now.",
+        "file": "deadrich"
     }
 ]
