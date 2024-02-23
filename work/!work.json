@@ -1,12 +1,25 @@
-[{
+[
+    {
+        "title": "Solar System",
+        "date": "Feb 2024",
+        "summary": "Lorem Ipsum",
+        "file": "solarsystem"
+    },
+    {
+        "title": "Text Translator",
+        "date": "Feb 2024",
+        "summary": "Lorem Ipsum",
+        "file": "translator"
+    },
+    {
         "title": "MongoDB",
-        "date": "2020 - Present",
+        "date": "Apr 2020 - Jan 2024",
         "summary": "Since April of 2020, I've been serving as Technical Program  Manager for MongoDB's driver teams. The majority of my work lies in facilitating meetings and projects amongst my 6 teams spanning 6 language ecosystems (NodeJS, PHP, Python, Ruby, Rust, and Swift). I spend an enormous amount of time working with Jira and think I can safely say I've approached mastery of its query language and custom automation functionality. I've also been working a lot more with GitHub's advanced functionalities than ever before and am becoming better versed in its collaboration and automation capabilities by the day. On top of the tool platforms, I've also been writing a good deal of Python and Groovy code for project management automations. A recent project I'm particularly proud of is creating team logos and redesigning the drivers department's Confluence wiki to promote better UX and information accessibility. While Confluence has its quirks, I've really enjoyed the process of delving deeper into understanding all the ways I can stretch the OOTB functionality to maximize my ability to customize the site for an optimal UX.",
         "file": "mongo"
     },
     {
         "title": "Pegasystems",
-        "date": "2016-2020",
+        "date": "Jun 2016 - Mar 2020",
         "summary": "I started working at Pegasystems in Cambridge, MA as a software engineer on the data visualization team in between my junior and senior years at Tufts. After graduating, I joined the team full time and began assisting with a greenfield overhaul of the data visualization engine. After about 8 months with the team full time, I was offered an opportunity to become a scrum master for my neighbor teams and I began a new post. While scrum mastering, I focused the vast majority of my energy on building strong friendships with my teammates while working to eliminate bogged down processes in favor of direct communication and data-driven decision making. Unable to shake my urge to design and develop, I frequently took up pet projects as a scrum master, ranging anywhere between creating dashboards for scrum team self-reflection, establishing an engineering-wide design documentation process, or hosting an open mic in the corporate cafeteria. After several years scrum mastering in Boston, New York City called to me too loudly to ignore and I set off on my next adventure.",
         "file": "pega"
     },
@@ -143,5 +156,4 @@
         "summary": "I made this breadboard synthesizer in my freshman year Music and the Art of Engineering course at Tufts. My (soon-to-be) lifelong best friends and I constructed this by hand and wrote a MATLAB script to process the input into played back sound. It has an 8 tone major 1-octave range, perfect for our class demonstration of playing MGMT's Electric Feel.",
         "file": "synth"
     }
-
 ]

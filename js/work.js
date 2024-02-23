@@ -1,7 +1,7 @@
-$(function() {
-    $.getJSON("/work/!work.json", function(json) {
-        makeTrackElems(json);
-        $(".workItem").click(function() {
+$(function () {
+    $.getJSON("/work/!work.json", function (json) {
+        makeWorkItems(json);
+        $(".workItem").click(function () {
             window.location.hash = $(this).data("file");
             scrollToTop();
             $("#docContent").empty();
@@ -10,7 +10,7 @@ $(function() {
     });
 });
 
-function makeTrackElems(json) {
+function makeWorkItems(json) {
     for (let i in json) {
         let html =
             `<div class="workItem" data-file="${json[i].file}" data-title="${json[i].title}" data-date="${json[i].date}" data-summary="${json[i].summary}">
