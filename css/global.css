@@ -161,7 +161,7 @@ a:hover {
     background-position: center;
     background-size: cover;
     background-color: transparent;
-    opacity: 40%;
+    opacity: 25%;
     position: absolute;
 }
 
@@ -179,7 +179,7 @@ a:hover {
 
 .workItem p {
     padding: 2px;
-    font-weight: 800;
+    font-weight: 900;
     color: black;
     font-size: clamp(12px, 1.7vw, 20px);
     width: -moz-fit-content;
